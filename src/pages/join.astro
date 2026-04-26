@@ -1,0 +1,62 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title={`Join the club · ${SITE_TITLE}`}
+			description="If you're thinking about joining the Optimist Club of Mount Horeb, Wisconsin, here's where we meet and how to come say hello."
+		/>
+	</head>
+	<body>
+		<Header />
+		<main>
+
+<!-- Welcome -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-20 text-center">
+    <p class="text-sm tracking-[0.3em] uppercase text-optimist-slate">Join the club</p>
+    <h1 class="mt-6 text-4xl md:text-5xl font-bold text-optimist-blue">We'd love to have you</h1>
+    <p class="mt-10 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      If you've made it to this page, you're probably thinking about joining &mdash; and that makes our day. The Optimist Club of Mount Horeb, Wisconsin is an unhurried room of neighbors who believe in our village's kids. There's room at the table for you.
+    </p>
+  </div>
+</section>
+
+<!-- Where we meet -->
+<section class="bg-optimist-beige">
+  <div class="max-w-3xl mx-auto px-6 py-20">
+    <h2 class="text-sm tracking-[0.3em] uppercase text-optimist-slate text-center">Where we meet</h2>
+    <p class="mt-8 text-3xl md:text-4xl font-bold text-optimist-blue text-center">Find us at the library</p>
+    <p class="mt-10 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      Third Monday of every month, 6:45 in the evening, at the Mount Horeb Public Library. Meetings run about 75 minutes &mdash; a little business, a little laughter, and at least one Mount Horeb High School student we'd like you to meet. You're welcome as our guest. Bring a neighbor.
+    </p>
+  </div>
+</section>
+
+<!-- Or email us first -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-20 text-center">
+    <h2 class="text-sm tracking-[0.3em] uppercase text-optimist-slate">Or drop us a line first</h2>
+    <p class="mt-8 text-3xl md:text-4xl font-bold text-optimist-blue">Hello.</p>
+    <p class="mt-10 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      If you'd rather say hello before stopping by a meeting, email us at <a href="mailto:hello@mounthoreboptimist.com" class="underline hover:text-optimist-gold transition-colors">hello@mounthoreboptimist.com</a>. We'll write back and find a time to introduce you around. We can't wait to meet you.
+    </p>
+    <a
+      href="mailto:hello@mounthoreboptimist.com"
+      class="inline-block mt-10 px-8 py-3 rounded-full bg-optimist-yellow text-optimist-blue font-semibold hover:bg-optimist-gold transition-colors"
+    >
+      Email us
+    </a>
+  </div>
+</section>
+
+		</main>
+		<Footer />
+	</body>
+</html>
