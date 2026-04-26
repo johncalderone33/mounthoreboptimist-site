@@ -1,0 +1,51 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import { SITE_TITLE } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title={`Newsletter · ${SITE_TITLE}`}
+			description="the mounthoreboptimist — the monthly newsletter from the Optimist Club of Mount Horeb, Wisconsin."
+		/>
+	</head>
+	<body>
+		<Header />
+		<main>
+
+<!-- Title -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 pt-20 pb-16 text-center">
+    <p class="text-xs tracking-[0.4em] uppercase text-optimist-slate">Optimist Club of Mount Horeb, Wisconsin</p>
+    <h1 class="mt-6 font-bold text-optimist-blue leading-none font-masthead uppercase tracking-tight whitespace-nowrap text-[clamp(1.25rem,4.5vw,3rem)]">The Mount Horeb Optimist</h1>
+    <p class="mt-10 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      A short newsletter from the Optimist Club of Mount Horeb, Wisconsin. Once a month, on the first of the month. Club news, the students we've honored, what's coming up, and a friend you should meet.
+    </p>
+  </div>
+</section>
+
+<!-- Issues -->
+<section class="bg-optimist-beige">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <p class="text-sm tracking-[0.3em] uppercase text-optimist-slate text-center">Issues</p>
+
+    <ul class="mt-10 space-y-6">
+      <li>
+        <a href="/newsletter/2026/may" class="block bg-white rounded-sm p-8 group hover:shadow-md transition-shadow">
+          <p class="text-sm tracking-[0.2em] uppercase text-optimist-slate">Vol. 1 &middot; No. 1 &middot; May 2026</p>
+          <h2 class="mt-3 text-2xl md:text-3xl font-semibold text-optimist-blue group-hover:text-optimist-gold transition-colors">April in the life of the club</h2>
+          <p class="mt-3 text-base text-optimist-slate leading-relaxed">Four students at one meeting. Welcoming John. Brittany goes to Milwaukee. Meet Ellen.</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+		</main>
+		<Footer />
+	</body>
+</html>

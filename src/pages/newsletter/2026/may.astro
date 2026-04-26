@@ -1,0 +1,193 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Footer from '../../../components/Footer.astro';
+import Header from '../../../components/Header.astro';
+import { SITE_TITLE } from '../../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title={`Newsletter · May 2026 · ${SITE_TITLE}`}
+			description="the mounthoreboptimist — Volume 1, Number 1, May 2026. The monthly newsletter from the Optimist Club of Mount Horeb, Wisconsin."
+		/>
+	</head>
+	<body>
+		<Header />
+		<main>
+
+<!-- Masthead -->
+<section class="bg-white">
+  <div class="max-w-5xl mx-auto px-6 pt-20 pb-12">
+    <div class="border-y-4 border-double border-optimist-blue py-10 text-center">
+      <p class="text-xs tracking-[0.4em] uppercase text-optimist-slate">Optimist Club of Mount Horeb, Wisconsin</p>
+      <h1 class="mt-6 font-bold text-optimist-blue leading-none font-masthead uppercase tracking-tight whitespace-nowrap text-[clamp(1.25rem,6vw,4rem)]">The Mount Horeb Optimist</h1>
+      <p class="mt-6 text-sm tracking-[0.3em] uppercase text-optimist-slate">Vol. 1 &middot; No. 1 &middot; May 2026</p>
+    </div>
+  </div>
+</section>
+
+<!-- Opening -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 pb-12">
+    <p class="text-lg md:text-xl leading-relaxed text-optimist-blue italic">
+      April was a month of quiet, steady work &mdash; scholarship applications in, the Frolic just over the horizon, a Mount Horeb voice headed to Milwaukee. Here's what happened, who we honored, what's coming, and one of the friends behind it all.
+    </p>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- What happened in April -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 py-12">
+    <p class="text-xs tracking-[0.3em] uppercase text-optimist-slate">What happened</p>
+    <h2 class="mt-3 text-3xl md:text-4xl font-bold text-optimist-blue">April in the life of the club</h2>
+    <div class="mt-8 space-y-5 text-lg leading-relaxed text-optimist-blue">
+      <p>April brought a happy correction. The March meeting had been snowed out, so when we gathered at the Mount Horeb Public Library on the third Monday of April, four Someone You Should Know honorees came through the door instead of the usual two &mdash; Maddie Hadac and Molly McCue from March, joined by Kaylen Hastings and Barret Kreul from April. Four students, four families, four stories. It may have been the best meeting of the year. The kids are always the best part of these meetings; to have twice as many of them was a quiet gift. We also welcomed John as a new member that evening &mdash; he's agreed to help the club start a website and a newsletter.</p>
+      <p>Elsewhere in the month: on a Sunday afternoon in Verona, Brittany Walton &mdash; one of our January Someone You Should Know students &mdash; gave the oratorical presentation that earned her a spot at the SWIS District zonal in Milwaukee on May 16.</p>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- Someone You Should Know — March + April honorees -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 py-12">
+    <p class="text-xs tracking-[0.3em] uppercase text-optimist-slate">Someone you should know</p>
+    <h2 class="mt-3 text-3xl md:text-4xl font-bold text-optimist-blue">Honored at the April meeting</h2>
+
+    <!-- March pair -->
+    <div class="mt-12">
+      <p class="text-xs tracking-[0.3em] uppercase text-optimist-slate text-center">March</p>
+      <div class="mt-6 grid grid-cols-2 gap-6">
+        <figure>
+          <img src="/images/sysk/2026-03/hadac-maddie.jpeg" alt="Maddie Hadac" class="w-full h-auto rounded-sm" />
+          <figcaption class="mt-4 text-base font-semibold text-optimist-blue">Maddie Hadac</figcaption>
+          <p class="mt-2 text-base leading-relaxed text-optimist-blue">Senior. Hosts international exchange students; dance teacher at Forte Studios. Heading to Edgewood College for pre-law in the fall.</p>
+        </figure>
+        <figure>
+          <img src="/images/sysk/2026-03/mccue-molly.jpeg" alt="Molly McCue" class="w-full h-auto rounded-sm" />
+          <figcaption class="mt-4 text-base font-semibold text-optimist-blue">Molly McCue</figcaption>
+          <p class="mt-2 text-base leading-relaxed text-optimist-blue">Senior. Tuesday Jazz, Club Interact VP, NHS Officer. Hurricane Helene relief in North Carolina; eyeing the Peace Corps after college.</p>
+        </figure>
+      </div>
+      <p class="mt-6 text-base text-optimist-blue text-center">
+        Read their full stories at <a href="/someone-you-should-know/2026/march" class="underline hover:text-optimist-gold transition-colors">someone you should know &middot; march 2026</a>.
+      </p>
+    </div>
+
+    <!-- April pair -->
+    <div class="mt-14">
+      <p class="text-xs tracking-[0.3em] uppercase text-optimist-slate text-center">April</p>
+      <div class="mt-6 grid grid-cols-2 gap-6">
+        <figure>
+          <img src="/images/sysk/2026-04/hastings-kaylen.jpeg" alt="Kaylen Hastings" class="w-full h-auto rounded-sm" />
+          <figcaption class="mt-4 text-base font-semibold text-optimist-blue">Kaylen Hastings</figcaption>
+          <p class="mt-2 text-base leading-relaxed text-optimist-blue">Senior. Chamber Choir, Madrigal, POWER, Yearbook. Mission trips, Concerts in the Park at Rennebohm, Sugar Creek Bible Camp.</p>
+        </figure>
+        <figure>
+          <img src="/images/sysk/2026-04/kreul-barret.jpeg" alt="Barret Kreul" class="w-full h-auto rounded-sm" />
+          <figcaption class="mt-4 text-base font-semibold text-optimist-blue">Barret Kreul</figcaption>
+          <p class="mt-2 text-base leading-relaxed text-optimist-blue">Senior. Vocal Jazz, Madrigal, choreographer. Forte Studios dance teacher, Mount Horeb Summer School volunteer.</p>
+        </figure>
+      </div>
+      <p class="mt-6 text-base text-optimist-blue text-center">
+        Read their full stories at <a href="/someone-you-should-know/2026/april" class="underline hover:text-optimist-gold transition-colors">someone you should know &middot; april 2026</a>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- What's coming up -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 py-12">
+    <p class="text-xs tracking-[0.3em] uppercase text-optimist-slate">What's coming up</p>
+    <h2 class="mt-3 text-3xl md:text-4xl font-bold text-optimist-blue">May</h2>
+
+    <div class="mt-10 space-y-12 text-lg leading-relaxed text-optimist-blue">
+      <div>
+        <p class="text-sm tracking-[0.2em] uppercase text-optimist-slate">Saturday, May 16</p>
+        <h3 class="mt-2 text-xl md:text-2xl font-semibold text-optimist-blue">Brittany goes to Milwaukee</h3>
+        <p class="mt-3">Brittany Walton, one of our January Someone You Should Know students, takes the stage at the SWIS District zonal oratorical contest in Milwaukee. Presentations run 9:00 to noon at the Hilton Garden Inn Northwest. A Mount Horeb voice at the microphone &mdash; go, Brittany.</p>
+      </div>
+
+      <div>
+        <p class="text-sm tracking-[0.2em] uppercase text-optimist-slate">Drawing Sunday, June 14</p>
+        <h3 class="mt-2 text-xl md:text-2xl font-semibold text-optimist-blue">Summer Frolic raffle</h3>
+        <p class="mt-3">Twenty dollars buys a ticket. The grand prize is ten thousand. Fifteen cash prizes in all, drawn at 5:30 in the afternoon in the beer tent at Grundahl Park. You don't need to be there to win. Tickets at Miller &amp; Sons Supermarket, the Mount Horeb Area Chamber of Commerce, or any Optimist.</p>
+      </div>
+    </div>
+
+    <p class="mt-10 text-base text-optimist-blue text-center">
+      The full slate at <a href="/events" class="underline hover:text-optimist-gold transition-colors">events</a>.
+    </p>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- Meet an Optimist -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 py-12">
+    <p class="text-xs tracking-[0.3em] uppercase text-optimist-slate">Meet an optimist</p>
+    <h2 class="mt-3 text-3xl md:text-4xl font-bold text-optimist-blue">Ellen</h2>
+
+    <p class="mt-6 text-lg leading-relaxed text-optimist-blue italic">
+      Three questions for one of the friends who keeps the club going.
+    </p>
+
+    <div class="mt-10 space-y-10 text-lg leading-relaxed text-optimist-blue">
+      <div>
+        <p class="font-semibold text-optimist-blue">What got you to your first meeting?</p>
+        <p class="mt-3">I was chatting with Charlie Jefko at a function, who is one of the founding members of the Optimist Club of Mount Horeb, and he was sharing all the great things that the club does in the community. He was also telling me that he thought I would be a <em>great</em> Optimist member, and he invited me to be a guest at their next meeting to "just check them out." Well, I heeded his advice and remember leaving that meeting thinking, <em>I have never attended a meeting where I had so much fun and we accomplished so much!</em> It's still that way! We always have a lot of laughs at our meetings but also accomplish so much!</p>
+      </div>
+      <div>
+        <p class="font-semibold text-optimist-blue">What do you wish more people in Mount Horeb knew about the club?</p>
+        <p class="mt-3">I wish people in Mount Horeb knew that to be a member it's <em>not</em> a huge commitment. We only meet once a month, and our meetings are only 75 minutes. Of course, we have events throughout the year that require a little bit of time out of our members' schedules, but they are spread out and they aren't full-day commitments. It's a great way to give back to your community, make friends and have fun in the process!</p>
+      </div>
+      <div>
+        <p class="font-semibold text-optimist-blue">What's something the club has done that meant more than you expected?</p>
+        <p class="mt-3">A couple of years ago we started setting up a Kid's Zone station at the Norsk July 3rd Celebration. I had recognized a need for something to keep the kids occupied while waiting for the fireworks to start. The first year we served approximately 20&ndash;40 kids, but then our <em>fabulous</em> club member Emily Powers was able to contribute her creative juices toward the cause, and last year we served at least 200+ kids with 3 different patriotic craft projects, 3 different yard games and at least 10 face painting stations! We were able to offer all of this at no cost thanks to the club's fundraising efforts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- How to help -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 py-12 text-center">
+    <p class="text-lg leading-relaxed text-optimist-blue">
+      Buy a raffle ticket from any Optimist. Forward this to a neighbor. Come to a meeting &mdash; third Monday, Mount Horeb Public Library, 6:45 in the evening. We'd be glad to see you.
+    </p>
+  </div>
+</section>
+
+<!-- End ornament -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 pt-4 pb-20 text-center">
+    <p class="text-2xl tracking-[0.5em] text-optimist-gold">&middot; &middot; &middot;</p>
+    <p class="mt-6 text-xs tracking-[0.3em] uppercase text-optimist-slate">End of Vol. 1 &middot; No. 1</p>
+  </div>
+</section>
+
+		</main>
+		<Footer />
+	</body>
+</html>
