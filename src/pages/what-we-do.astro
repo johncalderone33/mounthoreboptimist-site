@@ -1,0 +1,92 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`What We Do · ${SITE_TITLE}`} description="A look at what the Optimist Club of Mount Horeb, Wisconsin does across the year — programs we run and partners we support." />
+	</head>
+	<body>
+		<Header />
+		<main>
+
+<!-- Programs we run -->
+<section class="bg-white pt-16">
+  <h2 class="text-3xl md:text-4xl font-bold text-optimist-blue text-center mb-12">The fun stuff</h2>
+  <div class="max-w-4xl mx-auto px-6 pb-16">
+    <img src="/images/what-we-do/basketball-shootout.jpg" ... />
+  </div>
+</section>
+
+<section class="bg-optimist-beige">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <div class="space-y-6 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      <p>The Optimist Club of Mount Horeb, Wisconsin enjoys many adventures. A silent auction at the Super Bowl Sunday pancake brunch. A craft tent for the kids on the night before the Fourth. A self-defense workshop at the end of summer. A youth play in early February with five-dollar tickets. A monthly meeting where we get to know a high school student we ought to know. A speech contest where one of our kids made it all the way to the world championship.</p>
+      <p>Whatever a Mount Horeb kid is doing &mdash; singing, performing, speaking up, painting a flag on her cheek &mdash; our village knows an Optimist had a hand in it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Where the rest goes -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <h2 class="text-3xl md:text-4xl font-bold text-optimist-blue text-center">Our friends and neighbors</h2>
+    <div class="mt-12 max-w-xl mx-auto">
+  <img src="/images/what-we-do/american-legion.jpg" alt="An Optimist Club member presenting a check to a member of the American Legion" class="w-full h-auto rounded-sm" />
+  </div>
+    <div class="mt-12 space-y-6 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      <p>The Optimists also raise money to support our hard-working, generous friends doing their own good work in the village. A scholarship handed out at the high school's senior awards night. A check to the American Legion so a Mount Horeb junior can spend a week at Badger Boys' or Girls' State. A donation to the music department for the marching band's trip to London. Burger shifts at Summer Frolic. Lefse with the Lions Club.</p>
+      <p>An investment in our youth, and an investment in our village.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Someone You Should Know -->
+<section class="bg-optimist-beige">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <h2 class="text-3xl md:text-4xl font-bold text-optimist-blue text-center">Someone You Should Know</h2>
+
+    <div class="mt-12 grid grid-cols-2 gap-6 max-w-xl mx-auto">
+      <figure class="text-center">
+        <img src="/images/sysk/2026-04/hastings-kaylen.jpeg" alt="Kaylen Hastings" class="w-full h-auto rounded-sm" />
+        <figcaption class="mt-3 text-base md:text-lg text-optimist-blue font-semibold">Kaylen Hastings</figcaption>
+      </figure>
+      <figure class="text-center">
+        <img src="/images/sysk/2026-04/kreul-barret.jpeg" alt="Barret Kreul" class="w-full h-auto rounded-sm" />
+        <figcaption class="mt-3 text-base md:text-lg text-optimist-blue font-semibold">Barret Kreul</figcaption>
+      </figure>
+    </div>
+
+    <p class="mt-12 text-lg md:text-xl leading-relaxed text-optimist-blue text-center">
+      The best part of every monthly meeting is the opportunity to visit with some of our extraordinary high school students and their families. We call it Someone You Should Know &mdash; and once you meet a few of them, you'll see why.
+    </p>
+
+    <div class="text-center">
+      <a href="/someone-you-should-know" class="inline-block mt-10 px-8 py-3 rounded-full bg-optimist-yellow text-optimist-blue font-semibold hover:bg-optimist-gold transition-colors">
+        Someone You Should Know
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Come help -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-20 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-optimist-blue">Come help</h2>
+    <p class="mt-10 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      If something here resonated, we'd love to meet you. Optimists are made, not born &mdash; most of us were just looking for a way to show up for kids in our village, and one Monday evening we walked into a meeting at the Mount Horeb Public Library and stayed. There's room at the table for you, too. Come for the work or come for the company. Either way, we'll be glad you're here.
+    </p>
+    <a href="/contact" class="inline-block mt-12 px-8 py-3 rounded-full bg-optimist-yellow text-optimist-blue font-semibold hover:bg-optimist-gold transition-colors">
+      Say hello
+    </a>
+  </div>
+</section>
+
+		</main>
+		<Footer />
+	</body>
+</html>

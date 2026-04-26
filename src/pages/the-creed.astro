@@ -1,0 +1,91 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`The Optimist Creed · ${SITE_TITLE}`} description="The Optimist Creed — ten promises, written in 1912 by Christian D. Larson, adopted by Optimist International in 1922." />
+	</head>
+	<body>
+		<Header />
+		<main>
+
+<!-- Title + framing -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <h1 class="text-4xl md:text-5xl font-bold text-optimist-blue text-center">The Optimist Creed</h1>
+    <p class="mt-10 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      More than a hundred years old, and it still reads like it was written for today.
+    </p>
+    <p class="mt-8 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      Most of us don't have it memorized. But after a while, you notice it showing up in your life every day.
+    </p>
+  </div>
+</section>
+
+<!-- Promise yourself -->
+<section class="bg-optimist-beige">
+  <div class="max-w-3xl mx-auto px-6 py-20">
+    <p class="italic text-xl md:text-2xl text-optimist-blue">Promise yourself &mdash;</p>
+    <ol class="mt-10 space-y-8 text-lg md:text-xl leading-relaxed text-optimist-blue list-none">
+      <li class="flex gap-6">
+        <span class="text-optimist-gold font-semibold flex-shrink-0 w-8">1.</span>
+        <span>To be so strong that nothing can disturb your peace of mind.</span>
+      </li>
+      <li class="flex gap-6">
+        <span class="text-optimist-gold font-semibold flex-shrink-0 w-8">2.</span>
+        <span>To talk health, happiness, and prosperity to every person you meet.</span>
+      </li>
+      <li class="flex gap-6">
+        <span class="text-optimist-gold font-semibold flex-shrink-0 w-8">3.</span>
+        <span>To make all your friends feel that there is something in them.</span>
+      </li>
+      <li class="flex gap-6">
+        <span class="text-optimist-gold font-semibold flex-shrink-0 w-8">4.</span>
+        <span>To look at the sunny side of everything and make your optimism come true.</span>
+      </li>
+      <li class="flex gap-6">
+        <span class="text-optimist-gold font-semibold flex-shrink-0 w-8">5.</span>
+        <span>To think only of the best, to work only for the best, and to expect only the best.</span>
+      </li>
+      <li class="flex gap-6">
+        <span class="text-optimist-gold font-semibold flex-shrink-0 w-8">6.</span>
+        <span>To be just as enthusiastic about the success of others as you are about your own.</span>
+      </li>
+      <li class="flex gap-6">
+        <span class="text-optimist-gold font-semibold flex-shrink-0 w-8">7.</span>
+        <span>To forget the mistakes of the past and press on to the greater achievements of the future.</span>
+      </li>
+      <li class="flex gap-6">
+        <span class="text-optimist-gold font-semibold flex-shrink-0 w-8">8.</span>
+        <span>To wear a cheerful countenance at all times and give every living creature you meet a smile.</span>
+      </li>
+      <li class="flex gap-6">
+        <span class="text-optimist-gold font-semibold flex-shrink-0 w-8">9.</span>
+        <span>To give so much time to the improvement of yourself that you have no time to criticize others.</span>
+      </li>
+      <li class="flex gap-6">
+        <span class="text-optimist-gold font-semibold flex-shrink-0 w-8">10.</span>
+        <span>To be too large for worry, too noble for anger, too strong for fear, and too happy to permit the presence of trouble.</span>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- Attribution -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 py-16 text-center">
+    <p class="text-base md:text-lg leading-relaxed text-optimist-slate italic">
+      Written in 1912 by Christian D. Larson, in his book <em>Your Forces and How to Use Them</em>. Originally titled &ldquo;Promise Yourself.&rdquo; Adopted by Optimist International as its official creed in 1922.
+    </p>
+  </div>
+</section>
+
+		</main>
+		<Footer />
+	</body>
+</html>

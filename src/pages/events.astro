@@ -1,0 +1,68 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Events · ${SITE_TITLE}`} description="Upcoming events from the Optimist Club of Mount Horeb, Wisconsin." />
+	</head>
+	<body>
+		<Header />
+		<main>
+
+<!-- Page header -->
+<section class="bg-white pt-16 pb-8">
+  <div class="max-w-3xl mx-auto px-6 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold text-optimist-blue">What's coming up</h1>
+  </div>
+</section>
+
+<!-- Event 1: Oratorical / SWIS conference — photo left, text right -->
+<section class="bg-white">
+  <div class="max-w-5xl mx-auto px-6 py-16">
+    <div class="md:grid md:grid-cols-2 md:gap-12 md:items-center">
+      <div>
+        <img src="/images/events/2026-zonal.jpg" alt="Brittany and Ella with their medals after the Verona oratorical contest" class="w-full h-auto rounded-sm" />
+      </div>
+      <div class="mt-8 md:mt-0">
+        <p class="text-sm tracking-[0.3em] uppercase text-optimist-slate">Saturday, May 16</p>
+        <h2 class="mt-3 text-3xl md:text-4xl font-bold text-optimist-blue">Brittany goes to Milwaukee</h2>
+        <div class="mt-6 space-y-5 text-lg leading-relaxed text-optimist-blue">
+          <p>You may already know Brittany. Back in January, we recognized her as one of our <a href="/someone-you-should-know/2026/january" class="underline hover:text-optimist-gold transition-colors">Someone You Should Know</a> students for outstanding community service. Now she's representing Mount Horeb at the next level.</p>
+          <p>Last month, Brittany and Ella from Verona High School gave terrific presentations at the Verona Optimist Club's oratorical contest, and both of them earned a spot at the zonal competition. The zonal is the headline event at the SWIS District's third quarter conference on May 16 at the Hilton Garden Inn Milwaukee Northwest. Oratorical presentations run from 9:00 to noon. SWIS &mdash; the Southern Wisconsin District of Optimist International &mdash; is our regional family of clubs, and a Mount Horeb voice will be at the microphone.</p>
+          <p>Cheering from home. Go, Brittany.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Event 2: Frolic raffle — photo right, text left -->
+<section class="bg-white">
+  <div class="max-w-5xl mx-auto px-6 py-16">
+    <div class="md:grid md:grid-cols-2 md:gap-12 md:items-center">
+      <div class="md:order-2">
+        <img src="/images/events/frolic-raffle.webp" alt="Drawing a winning ticket at the Summer Frolic raffle" class="w-full h-auto rounded-sm" />
+      </div>
+      <div class="mt-8 md:mt-0 md:order-1">
+        <p class="text-sm tracking-[0.3em] uppercase text-optimist-slate">Drawing Sunday, June 14</p>
+        <h2 class="mt-3 text-3xl md:text-4xl font-bold text-optimist-blue">Summer Frolic raffle</h2>
+        <div class="mt-6 space-y-5 text-lg leading-relaxed text-optimist-blue">
+          <p>Twenty dollars buys a ticket. The grand prize is ten thousand. There are fifteen cash prizes in all, and the drawing happens at 5:30 in the afternoon on Sunday, June 14, in the beer tent at Grundahl Park. You don't need to be there to win.</p>
+  <p>Here's the part we want you to hear. The Frolic and the Optimists are teammates. The Frolic has been very generous to us over the years, and the proceeds from this raffle come right back to the local nonprofits and youth sports clubs that work the festival every June &mdash; us included.</p>
+  <p>Tickets are at Miller &amp; Sons Supermarket and the Mount Horeb Area Chamber of Commerce, or from any of us &mdash; flag down an Optimist and we'll happily sell you one.</p>
+  <p>It's a good ticket to buy.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+		</main>
+		<Footer />
+	</body>
+</html>

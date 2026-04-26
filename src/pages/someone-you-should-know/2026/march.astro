@@ -1,0 +1,59 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Footer from '../../../components/Footer.astro';
+import Header from '../../../components/Header.astro';
+import SyskRecognitionNote from '../../../components/sysk/SyskRecognitionNote.astro';
+import SyskArchiveFooter from '../../../components/sysk/SyskArchiveFooter.astro';
+import { SITE_TITLE } from '../../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Someone You Should Know · March 2026 · ${SITE_TITLE}`} description="Maddie Hadac and Molly McCue — honored by the Optimist Club of Mount Horeb, Wisconsin in March 2026." />
+	</head>
+	<body>
+		<Header />
+		<main>
+
+<!-- Title -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-16 text-center">
+    <p class="text-sm tracking-[0.3em] uppercase text-optimist-slate">Someone You Should Know</p>
+    <h1 class="mt-4 text-4xl md:text-5xl font-bold text-optimist-blue">March 2026</h1>
+  </div>
+</section>
+
+<!-- Maddie Hadac -->
+<section class="bg-optimist-beige">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <img src="/images/sysk/2026-03/hadac-maddie.jpeg" alt="Maddie Hadac" class="w-full h-auto rounded-sm" />
+    <h2 class="mt-10 text-3xl md:text-4xl font-bold text-optimist-blue text-center">Maddie Hadac</h2>
+    <div class="mt-10 space-y-6 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      <p>Maddie, a senior at Mount Horeb High School, exemplifies leadership, compassion, and commitment both inside and outside the classroom. Maddie has developed a deep appreciation for cultural connection and global understanding through her experiences as an exchange sister. Over the past several years, she and her family have hosted three international exchange students from Thailand, Ecuador, and most recently, Greenland. Since the age of three, Maddie has been dedicated to dance at Forte Studios. Last year, she stepped into a leadership role as a teacher for younger dancers, and she now serves as a teacher for five classes — all while maintaining her own rigorous dance schedule.</p>
+      <p>While many students struggle with the question of what they want to do in the future, Maddie found her path through reading a book about discrimination, an experience that sparked a passion for advocacy and justice. During one campaign event, she had the unforgettable opportunity to shake hands with President Barack Obama — a moment that further fueled her aspiration to create meaningful change, perhaps running herself one day. In the fall of 2026, Maddie will attend Edgewood College, where she plans to study Criminal Justice and Political Science on a pre-law track.</p>
+    </div>
+    <p class="mt-10 text-center text-lg md:text-xl text-optimist-blue"><em>Maddie Hadac</em> is Someone You Should Know.</p>
+  </div>
+</section>
+
+<!-- Molly McCue -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <img src="/images/sysk/2026-03/mccue-molly.jpeg" alt="Molly McCue" class="w-full h-auto rounded-sm" />
+    <h2 class="mt-10 text-3xl md:text-4xl font-bold text-optimist-blue text-center">Molly McCue</h2>
+    <div class="mt-10 space-y-6 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      <p>Molly is a senior at Mount Horeb High School. She is a member of all three Jazz Bands making her way up to the most competitive Jazz Band — Tuesday Jazz. In her junior year, Molly joined Club Interact due to her passion for service and is currently the Vice President. As a National Honor Society Officer she and her peers led a very successful supply drive and were able to donate the largest amount of donations Ronald McDonald House has ever seen.</p>
+      <p>She traveled to North Carolina on a disaster relief trip to aid in the wreck after Hurricane Helene where she helped build houses, clear paths and roads, volunteered at homeless shelters, and worked at Habitat for Humanity. One of her favorite events of the year that is hosted at Good Shepherd Lutheran Church is Feed My Starving Children. Each year in high school she has participated with deep passion and joy in helping through the idea that many hands make a difference. Molly aspires to work through the Peace Corps or Lutheran Corps after college to put her hands and drive for service to work.</p>
+    </div>
+    <p class="mt-10 text-center text-lg md:text-xl text-optimist-blue"><em>Molly McCue</em> is Someone You Should Know.</p>
+  </div>
+</section>
+
+<SyskRecognitionNote />
+<SyskArchiveFooter />
+
+		</main>
+		<Footer />
+	</body>
+</html>

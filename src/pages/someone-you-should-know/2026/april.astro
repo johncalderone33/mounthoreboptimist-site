@@ -1,0 +1,59 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Footer from '../../../components/Footer.astro';
+import Header from '../../../components/Header.astro';
+import SyskRecognitionNote from '../../../components/sysk/SyskRecognitionNote.astro';
+import SyskArchiveFooter from '../../../components/sysk/SyskArchiveFooter.astro';
+import { SITE_TITLE } from '../../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Someone You Should Know · April 2026 · ${SITE_TITLE}`} description="Kaylen Hastings and Barret Kreul — honored by the Optimist Club of Mount Horeb, Wisconsin in April 2026." />
+	</head>
+	<body>
+		<Header />
+		<main>
+
+<!-- Title -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-16 text-center">
+    <p class="text-sm tracking-[0.3em] uppercase text-optimist-slate">Someone You Should Know</p>
+    <h1 class="mt-4 text-4xl md:text-5xl font-bold text-optimist-blue">April 2026</h1>
+  </div>
+</section>
+
+<!-- Kaylen Hastings -->
+<section class="bg-optimist-beige">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <img src="/images/sysk/2026-04/hastings-kaylen.jpeg" alt="Kaylen Hastings" class="w-full h-auto rounded-sm" />
+    <h2 class="mt-10 text-3xl md:text-4xl font-bold text-optimist-blue text-center">Kaylen Hastings</h2>
+    <div class="mt-10 space-y-6 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      <p>Kaylen is a senior at Mount Horeb High School. She has been a member of the Chamber Choir and the high school musical cast all four years. As a member of the choir, she attended trips to New York and to London where she was able to perform a concert for local residents at the Holy Trinity Church. She is currently a member of the Yearbook Club and People's Organization of Women's Equality and Rights (POWER) Club.</p>
+      <p>Outside of school, Kaylen has been volunteering in events at Evangelical Lutheran Church all throughout high school. She enjoys going on mission trips with other youth from local churches and helping to do things like volunteer at a local clothes closet and cleaning an elderly woman's garage. The past two summers she volunteered at Rennebohm Park in Madison on Thursday evenings setting up and taking down chairs, music stands, speakers and other equipment. She also helps elderly folks to their chairs to watch "Concerts in the Park" performed by the Capitol City Band. Kaylen plans on volunteering for the next couple years at Sugar Creek Bible Camp where she has participated as a camper since she was six years old.</p>
+    </div>
+    <p class="mt-10 text-center text-lg md:text-xl text-optimist-blue"><em>Kaylen Hastings</em> is Someone You Should Know.</p>
+  </div>
+</section>
+
+<!-- Barret Kreul -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <img src="/images/sysk/2026-04/kreul-barret.jpeg" alt="Barret Kreul" class="w-full h-auto rounded-sm" />
+    <h2 class="mt-10 text-3xl md:text-4xl font-bold text-optimist-blue text-center">Barret Kreul</h2>
+    <div class="mt-10 space-y-6 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      <p>Barret is a senior at Mount Horeb High School. His interest in dance and music has given him the opportunity to be in the cast and also as the choreographer of the high school musicals. He is also a member of Vocal Jazz and Madrigal. Outside of school, Barret has been an active student in Forte Studios' dance program taking classes of Ballet, Jazz, Modern, Tap, Hip-hop, Pointe, and Improvisation. This year he is the Dance Captain of X-tension performing for the Madison Capitals and Milwaukee Herd.</p>
+      <p>Barret makes it his goal to help with the education of children. Barret started off volunteering as a dance teacher's assistant at Forte, helping out with a 1st-3rd grade ballet and tap combo class. Barret is now employed as a student dance teacher at Forte Studios. Barret has dedicated his time over the summers to helping out with Mount Horeb Summer School. He volunteered for Mrs. Sieja's 3rd grade math camp and the next summer with Mrs. Rockow's Kindergarten Kickoff. He is currently helping Mrs. Chamberlain's kindergarten class during their math and integrity time.</p>
+    </div>
+    <p class="mt-10 text-center text-lg md:text-xl text-optimist-blue"><em>Barret Kreul</em> is Someone You Should Know.</p>
+  </div>
+</section>
+
+<SyskRecognitionNote />
+<SyskArchiveFooter />
+
+		</main>
+		<Footer />
+	</body>
+</html>

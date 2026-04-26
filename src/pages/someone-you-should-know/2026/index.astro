@@ -1,0 +1,59 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Footer from '../../../components/Footer.astro';
+import Header from '../../../components/Header.astro';
+import SyskArchiveFooter from '../../../components/sysk/SyskArchiveFooter.astro';
+import { SITE_TITLE } from '../../../consts';
+
+// Months we have so far for 2026 — newest first
+// To add a new month: add an object to the top of this array.
+const months = [
+	{ slug: 'april', name: 'April', students: 'Kaylen Hastings · Barret Kreul' },
+	{ slug: 'march', name: 'March', students: 'Maddie Hadac · Molly McCue' },
+	{ slug: 'february', name: 'February', students: 'Kyle Frischman · Anna Tranel' },
+	{ slug: 'january', name: 'January', students: 'Jack Schultek · Brittany Walton' },
+];
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Someone You Should Know · 2026 · ${SITE_TITLE}`} description="The Optimist Club of Mount Horeb, Wisconsin recognizes outstanding students each month. Browse 2026 honorees." />
+	</head>
+	<body>
+		<Header />
+		<main>
+
+<!-- Title -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-16 text-center">
+    <p class="text-sm tracking-[0.3em] uppercase text-optimist-slate">Someone You Should Know</p>
+    <h1 class="mt-4 text-4xl md:text-5xl font-bold text-optimist-blue">2026</h1>
+    <p class="mt-10 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      Each month, the Optimist Club of Mount Horeb, Wisconsin honors Mount Horeb High School students for outstanding community service. Here are the students we got to meet this year.
+    </p>
+  </div>
+</section>
+
+<!-- Months -->
+<section class="bg-optimist-beige">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <ul class="space-y-4 list-none">
+      {months.map((m) => (
+        <li>
+          <a href={`/someone-you-should-know/2026/${m.slug}`} class="block bg-white px-6 py-6 rounded-sm hover:shadow-md transition-shadow">
+            <p class="text-2xl md:text-3xl font-bold text-optimist-blue">{m.name}</p>
+            <p class="mt-2 text-base md:text-lg text-optimist-slate">{m.students}</p>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<SyskArchiveFooter />
+
+		</main>
+		<Footer />
+	</body>
+</html>

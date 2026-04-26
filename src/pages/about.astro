@@ -1,63 +1,88 @@
 ---
-import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
-import Layout from '../layouts/BlogPost.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
 ---
 
-<Layout
-	title="About Me"
-	description="Lorem ipsum dolor sit amet"
-	pubDate={new Date('August 08 2021')}
-	heroImage={AboutHeroImage}
->
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo
-		viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam
-		adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus
-		et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-		vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque
-		sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
-	</p>
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`About · ${SITE_TITLE}`} description="About the Optimist Club of Mount Horeb, Wisconsin — friends of youth, chartered 1995." />
+	</head>
+	<body>
+		<Header />
+		<main>
 
-	<p>
-		Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non
-		tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non
-		blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna
-		porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis
-		massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-		Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis
-		bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra
-		massa massa ultricies mi.
-	</p>
+<!-- Photo -->
+<section class="bg-white">
+  <div class="max-w-4xl mx-auto px-6 pt-12">
+    <img src="/images/about.webp" alt="Mount Horeb Summer Frolic — Ferris wheel, carnival rides, and a ball game underway at dusk" class="w-full h-auto rounded-sm" />
+  </div>
+</section>
 
-	<p>
-		Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl
-		suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet
-		nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae
-		turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem
-		dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat
-		semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-		vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum
-		facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam
-		vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla
-		urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
-	</p>
+<!-- Intro -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-20">
+    <h1 class="text-base tracking-[0.3em] uppercase text-optimist-slate text-center">About</h1>
+    <p class="mt-10 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      The picture up there is a Mount Horeb summer &mdash; Ferris wheel, the swinging ride mid-arc, a ball game in play. That's the Frolic. That's our village.
+    </p>
+    <p class="mt-6 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      We're the Optimist Club of Mount Horeb, Wisconsin. Chartered in the fall of 1995, part of the Southern Wisconsin District. Friends of youth. Neighbors who believe in our home.
+    </p>
+  </div>
+</section>
 
-	<p>
-		Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper
-		viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc
-		scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur
-		gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus
-		pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-		blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id
-		cursus metus aliquam eleifend mi.
-	</p>
+<!-- Optimism as a practice -->
+<section class="bg-optimist-beige">
+  <div class="max-w-3xl mx-auto px-6 py-20">
+    <h2 class="text-base tracking-[0.3em] uppercase text-optimist-slate text-center">Optimism as a practice</h2>
+    <p class="mt-8 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      Optimism, the way we mean it, isn't a mood. It's a daily practice.
+    </p>
+    <p class="mt-6 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      It's easy to talk about; and a little harder to follow through, month after month, year after year. It means choosing to invest in kids without regard to the news of the day. It means reading a scholarship application and thinking, <em>I want to help this one through</em>. It means believing &mdash; out loud, in public &mdash; that a humble village's best days are the ones still ahead.
+    </p>
+    <p class="mt-6 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      Most days it doesn't feel like something special. Pancakes at the high school. Burger shifts at the Frolic. A Kid Zone at the Norsk Fourth of July celebration. The quiet pride of watching a student get named Someone You Should Know. It adds up. And we show up for it.
+    </p>
+  </div>
+</section>
 
-	<p>
-		Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta
-		nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam
-		tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci
-		ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar
-		proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
-	</p>
-</Layout>
+<!-- The Creed -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-20">
+    <h2 class="text-base tracking-[0.3em] uppercase text-optimist-slate text-center">The Creed</h2>
+    <p class="mt-8 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      The Optimist Creed is older than the club &mdash; Optimists have been saying something like it for more than a hundred years. It starts like this:
+    </p>
+    <div class="mt-10 pl-6 border-l-4 border-optimist-yellow italic text-lg md:text-xl leading-relaxed text-optimist-blue">
+      <p>Promise yourself &mdash;</p>
+      <p class="mt-4">To be so strong that nothing can disturb your peace of mind.</p>
+      <p class="mt-4">To talk health, happiness, and prosperity to every person you meet.</p>
+      <p class="mt-4">To make all your friends feel that there is something in them.</p>
+    </div>
+    <p class="mt-10 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      It goes on for ten promises. Most of us don't have it memorized. But after a while, you notice it showing up in your life every day.
+    </p>
+  </div>
+</section>
+
+<!-- Come say hello -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-20 text-center">
+    <h2 class="text-base tracking-[0.3em] uppercase text-optimist-slate">Come say hello</h2>
+    <p class="mt-6 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      If this sounds like the kind of place you'd like to stand, come say hello. We'd be glad to meet you.
+    </p>
+    <a href="/contact" class="inline-block mt-10 px-8 py-3 rounded-full bg-optimist-yellow text-optimist-blue font-semibold hover:bg-optimist-gold transition-colors">
+      Say hello
+    </a>
+  </div>
+</section>
+
+		</main>
+		<Footer />
+	</body>
+</html>

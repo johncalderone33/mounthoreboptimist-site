@@ -1,0 +1,59 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Footer from '../../../components/Footer.astro';
+import Header from '../../../components/Header.astro';
+import SyskRecognitionNote from '../../../components/sysk/SyskRecognitionNote.astro';
+import SyskArchiveFooter from '../../../components/sysk/SyskArchiveFooter.astro';
+import { SITE_TITLE } from '../../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Someone You Should Know · January 2026 · ${SITE_TITLE}`} description="Jack Schultek and Brittany Walton — honored by the Optimist Club of Mount Horeb, Wisconsin in January 2026." />
+	</head>
+	<body>
+		<Header />
+		<main>
+
+<!-- Title -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-16 text-center">
+    <p class="text-sm tracking-[0.3em] uppercase text-optimist-slate">Someone You Should Know</p>
+    <h1 class="mt-4 text-4xl md:text-5xl font-bold text-optimist-blue">January 2026</h1>
+  </div>
+</section>
+
+<!-- Jack Schultek -->
+<section class="bg-optimist-beige">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <img src="/images/sysk/2026-01/schultek-jack.jpg" alt="Jack Schultek" class="w-full h-auto rounded-sm" />
+    <h2 class="mt-10 text-3xl md:text-4xl font-bold text-optimist-blue text-center">Jack Schultek</h2>
+    <div class="mt-10 space-y-6 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      <p>Jack is a senior at Mount Horeb High School. He has been active in many clubs and activities during his high school years including Student Council (has served as Secretary and President), Link Crew, Club Interact, National Honors Society, Green Team (has served as Treasurer and President), DECA (Officer for three years) and Prom Planning Committee. He just finished the EMT Class at Madison College and is now preparing to take the National Registry exam. Jack is a Mental Health Campaign co-founder for a project known as the InnerMind Project and had a booth at the Mental Health and Wellness Fall Festival. Jack participated in Cancer Research at UW-Madison last summer.</p>
+      <p>The InnerMind Project was an initiative founded by Jack and a friend. This initiative focused on providing students with sufficient materials to begin journaling as a coping mechanism after the events of May first. They worked on this project for nine months, and participated in the Mental Health and Wellness Fall Festival where they ran a successful booth promoting journaling techniques and donated over 400 journals to participants. He also presented to a group of firefighters in Middleton and talked about the effects of working in emergency care and the benefits of journaling. The InnerMind Project was presented at the DECA State Conference and won third in the State, allowing them to present the InnerMind Project at the International Stage. Jack believes that advocacy is one's greatest power.</p>
+    </div>
+    <p class="mt-10 text-center text-lg md:text-xl text-optimist-blue"><em>Jack Schultek</em> is Someone You Should Know.</p>
+  </div>
+</section>
+
+<!-- Brittany Walton -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <img src="/images/sysk/2026-01/walton-brittany.jpg" alt="Brittany Walton" class="w-full h-auto rounded-sm" />
+    <h2 class="mt-10 text-3xl md:text-4xl font-bold text-optimist-blue text-center">Brittany Walton</h2>
+    <div class="mt-10 space-y-6 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      <p>Brittany is a senior at Mount Horeb High School and has been involved in many different volunteer opportunities throughout her community. During the summer months she has participated in various volunteer opportunities through Evangelical Lutheran Church of Mt Horeb. These include volunteering at the Clothes Closet, sorting books for the non-profit Madison Reading Project, helping at the Riverside Food Pantry and also assisting with Parent's Night Out. Brittany has also helped out with many Optimist events throughout her middle school and high school years, which include assisting with applying make-up for the Prairie Fire performances, face painting for the Norsk Celebration and being a backstage-hand for Mt. Horeb's Got Talent.</p>
+      <p>One of her favorite volunteering positions is working with the cats in captivity at the Iowa County Humane Society, where she has put in 25 hours of volunteer hours so far this year and continues to volunteer. Outside of rolling up her sleeves to help in our area, Brittany also assisted her family in gathering supplies in September of 2024 for the victims of Hurricane Helene in North Carolina on two different occasions. The first donation drive filled a 26 foot truck (U-Haul's biggest truck) plus a snowmobile trailer, and 2 pick-ups. Brittany is also an entrepreneur and started her own gardening business in the summer of 2025, performing various gardening tasks for many local clients. Brittany will be attending UW Steven's Point in the fall of 2026 and studying Interior Architectural Design.</p>
+    </div>
+    <p class="mt-10 text-center text-lg md:text-xl text-optimist-blue"><em>Brittany Walton</em> is Someone You Should Know.</p>
+  </div>
+</section>
+
+<SyskRecognitionNote />
+<SyskArchiveFooter />
+
+		</main>
+		<Footer />
+	</body>
+</html>

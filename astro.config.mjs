@@ -8,7 +8,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
+  site: 'https://mounthoreboptimist.com',
   integrations: [mdx(), sitemap()],
 
   fonts: [
@@ -33,6 +33,15 @@ export default defineConfig({
                   },
               ],
           },
+      },
+      {
+          provider: fontProviders.google(),
+          name: 'Antonio',
+          cssVariable: '--font-antonio',
+          weights: [700],
+          styles: ['normal'],
+          subsets: ['latin'],
+          fallbacks: ['sans-serif'],
       },
 	],
 

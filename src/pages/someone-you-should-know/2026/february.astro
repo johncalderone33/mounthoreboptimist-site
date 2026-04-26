@@ -1,0 +1,59 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Footer from '../../../components/Footer.astro';
+import Header from '../../../components/Header.astro';
+import SyskRecognitionNote from '../../../components/sysk/SyskRecognitionNote.astro';
+import SyskArchiveFooter from '../../../components/sysk/SyskArchiveFooter.astro';
+import { SITE_TITLE } from '../../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Someone You Should Know · February 2026 · ${SITE_TITLE}`} description="Kyle Frischman and Anna Tranel — honored by the Optimist Club of Mount Horeb, Wisconsin in February 2026." />
+	</head>
+	<body>
+		<Header />
+		<main>
+
+<!-- Title -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-16 text-center">
+    <p class="text-sm tracking-[0.3em] uppercase text-optimist-slate">Someone You Should Know</p>
+    <h1 class="mt-4 text-4xl md:text-5xl font-bold text-optimist-blue">February 2026</h1>
+  </div>
+</section>
+
+<!-- Kyle Frischman -->
+<section class="bg-optimist-beige">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <img src="/images/sysk/2026-02/frischman-kyle.jpg" alt="Kyle Frischman" class="w-full h-auto rounded-sm" />
+    <h2 class="mt-10 text-3xl md:text-4xl font-bold text-optimist-blue text-center">Kyle Frischman</h2>
+    <div class="mt-10 space-y-6 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      <p>Kyle is a senior at Mount Horeb High School. He has been a three year member of the Student Council and serves as the Public Relations Officer. He has served as Class Office President his junior and senior years. He is a member of the high school jazz band, a Band Board Member, and a member of the Wisconsin State Music Association Honors Project for three years. Kyle is also a National Honors Society Member and Officer. He was selected as a Badger Boys State participant. His high school sports involvement include three years of soccer and four years of varsity track earning the title of State Champion for 4X2 and 6th in 200.</p>
+      <p>Outside of school, Kyle has accumulated more than 180 hours of community service through volunteering at Neighbors Helping Neighbors Food Pantry and Clothes Closet sorting and organizing donations. He has also volunteered as a summer school student mentor for three summers. He has volunteered with the Scandihoovian Fest, helped with ushering at Mount Horeb Music performances, and assisted with community band through playing and helping with setup and organization. Kyle also helps with many volunteer opportunities through his church.</p>
+    </div>
+    <p class="mt-10 text-center text-lg md:text-xl text-optimist-blue"><em>Kyle Frischman</em> is Someone You Should Know.</p>
+  </div>
+</section>
+
+<!-- Anna Tranel -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <img src="/images/sysk/2026-02/tranel-anna.jpg" alt="Anna Tranel" class="w-full h-auto rounded-sm" />
+    <h2 class="mt-10 text-3xl md:text-4xl font-bold text-optimist-blue text-center">Anna Tranel</h2>
+    <div class="mt-10 space-y-6 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      <p>Anna is a senior at Mount Horeb High School. Anna is heavily involved in music. She has been in Concert Band, Symphonic Band, and Varsity Band, along with being a Band Officer. She has participated in the Orchestra and is an officer of the Choir. Not only has Anna been a part of the band, orchestra, and choir, but also participated in many extracurricular music activities, including Chamber Singers, the Jazz Bands, Fiddle Band, the Madrigal Ensemble, and the Vocal Jazz Ensemble. She has also assisted with the various fundraisers for the High School Music Department's trip to London. Anna was a part of the high school Musical Cast and Crew. She was also a Drama Club Student Director and part of the Drama Club Cast.</p>
+      <p>In the Mount Horeb community, Anna is an active member of Girl Scouts and is currently working on her Gold Award. Through her church, she was able to attend the National Youth Gathering in New Orleans, LA, and assisted in more opportunities to help the community. Anna also participates in the local Norwegian Vennelag group in Mount Horeb. Anna has volunteered at Neighbor Helping Neighbors, Roadside Cleanup, Parents Night Out, Immanuel Lutheran Church fundraisers as well as The Evangelical Lutheran Church fundraisers, Childcare and Gilda's Club. She has been a Vacation Bible School Volunteer as well as a volunteer at the library.</p>
+    </div>
+    <p class="mt-10 text-center text-lg md:text-xl text-optimist-blue"><em>Anna Tranel</em> is Someone You Should Know.</p>
+  </div>
+</section>
+
+<SyskRecognitionNote />
+<SyskArchiveFooter />
+
+		</main>
+		<Footer />
+	</body>
+</html>
