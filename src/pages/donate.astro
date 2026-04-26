@@ -1,0 +1,63 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title={`Donate · ${SITE_TITLE}`}
+			description="Donations to the Optimist Club of Mount Horeb, Wisconsin go straight back into the kids and corners of our village. Email a board member to give."
+		/>
+	</head>
+	<body>
+		<Header />
+		<main>
+
+<!-- Photo -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 pt-12">
+    <img src="/images/mt_horeb_water_tower.jpg" alt="Mount Horeb water tower" class="w-full h-auto rounded-sm" />
+  </div>
+</section>
+
+<!-- Welcome -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-20 text-center">
+    <p class="text-sm tracking-[0.3em] uppercase text-optimist-slate">Donate</p>
+    <h1 class="mt-6 text-4xl md:text-5xl font-bold text-optimist-blue">Thank you for considering us</h1>
+    <p class="mt-10 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      That's our village up there. When you give to the Optimist Club, the money doesn't sit with us &mdash; it moves through us into the kids and corners of Mount Horeb that need it most.
+    </p>
+  </div>
+</section>
+
+<!-- Where it goes -->
+<section class="bg-optimist-beige">
+  <div class="max-w-3xl mx-auto px-6 py-20">
+    <h2 class="text-sm tracking-[0.3em] uppercase text-optimist-slate text-center">Where it goes</h2>
+    <p class="mt-8 text-3xl md:text-4xl font-bold text-optimist-blue text-center">There's no better investment than investing in youth</p>
+    <p class="mt-10 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      Scholarships at the senior awards night. The recognition stipend that comes with each Someone You Should Know honor. A donation to the high school music department for the marching band's trip to London. The dollar you give us reaches a kid in your village.
+    </p>
+  </div>
+</section>
+
+<!-- How to give -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-20 text-center">
+    <h2 class="text-sm tracking-[0.3em] uppercase text-optimist-slate">How to give</h2>
+    <p class="mt-8 text-3xl md:text-4xl font-bold text-optimist-blue">Email a board member</p>
+    <p class="mt-10 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      Thank you for considering a donation. Email us at <a href="mailto:hello@mounthoreboptimist.com" class="underline">hello@mounthoreboptimist.com</a> and one of our board members will get in touch to walk you through it.
+    </p>
+  </div>
+</section>
+
+		</main>
+		<Footer />
+	</body>
+</html>
