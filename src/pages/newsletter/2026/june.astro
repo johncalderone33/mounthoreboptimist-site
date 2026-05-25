@@ -1,0 +1,197 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Footer from '../../../components/Footer.astro';
+import Header from '../../../components/Header.astro';
+import NewsletterSignup from '../../../components/NewsletterSignup.astro';
+import { SITE_TITLE } from '../../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title={`Newsletter · June 2026 · ${SITE_TITLE}`}
+			description="The Mount Horeb Optimist — Volume 1, Number 2, June 2026. The monthly newsletter from the Optimist Club of Mount Horeb, Wisconsin."
+		/>
+	</head>
+	<body>
+		<Header />
+		<main>
+
+<!-- Masthead -->
+<section class="bg-white">
+  <div class="max-w-5xl mx-auto px-6 pt-20 pb-12">
+    <div class="border-y-4 border-double border-optimist-blue py-10 text-center">
+      <p class="text-xs tracking-[0.4em] uppercase text-optimist-slate">Optimist Club of Mount Horeb, Wisconsin</p>
+      <h1 class="mt-6 font-bold text-optimist-blue leading-none font-masthead uppercase tracking-tight whitespace-nowrap text-[clamp(1.25rem,6vw,4rem)]">The Mount Horeb Optimist</h1>
+      <p class="mt-6 text-sm tracking-[0.3em] uppercase text-optimist-slate">Vol. 1 &middot; No. 2 &middot; June 2026</p>
+    </div>
+  </div>
+</section>
+
+<!-- Opening -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 pb-12">
+    <p class="text-lg md:text-xl leading-relaxed text-optimist-blue italic">
+      May was a month of summer planning. The school year ended at senior awards night with five Optimist scholarships handed out. Here's that night, the students we honored, what's coming this summer, and one of the friends behind it all.
+    </p>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- What happened in May -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 py-12">
+    <p class="text-xs tracking-[0.3em] uppercase text-optimist-slate">What happened</p>
+    <h2 class="mt-3 text-3xl md:text-4xl font-bold text-optimist-blue">May in the life of the club</h2>
+    <figure class="mt-8">
+      <img src="/images/scholarship-recipients.jpeg" alt="Cynthia Jefko with five Mount Horeb High School scholarship recipients at senior awards night" class="w-full h-auto rounded-sm" />
+      <figcaption class="mt-3 text-sm text-optimist-slate italic text-center">Cynthia Jefko with the scholarship recipients</figcaption>
+    </figure>
+    <div class="mt-8 space-y-5 text-lg leading-relaxed text-optimist-blue">
+      <p>The school year ended at senior awards night this May at Mount Horeb High School. The club handed five $500 scholarships to graduating seniors &mdash; Eleanor Guenther, Kaylen Hastings, Lily Nelson, Kyle Frischman, and Barret Kreul. Each of these extraordinary students was featured this school year on our <a href="https://www.facebook.com/mounthoreboptimistclub" target="_blank" rel="noopener" class="underline hover:text-optimist-gold transition-colors">Facebook page</a> as Someone You Should Know.</p>
+      <p>Mount Horeb Optimist Cynthia Jefko presented the awards. A special, emotional night &mdash; for the kids, for their families, for the village.</p>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- Someone You Should Know — May honorees -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 py-12">
+    <p class="text-xs tracking-[0.3em] uppercase text-optimist-slate">Someone you should know</p>
+    <h2 class="mt-3 text-3xl md:text-4xl font-bold text-optimist-blue">Honored at the May meeting</h2>
+
+    <div class="mt-12 grid grid-cols-2 gap-6">
+      <figure>
+        <img src="/images/sysk/2026-05/droessler-faith.jpg" alt="Faith Droessler" class="w-full h-auto rounded-sm" />
+        <figcaption class="mt-4 text-base font-semibold text-optimist-blue">Faith Droessler</figcaption>
+        <p class="mt-2 text-base leading-relaxed text-optimist-blue">Senior. Cross country, high school musical, drama club. Co-founded the Writers' Collective; works at Children's Community School.</p>
+      </figure>
+      <figure>
+        <img src="/images/sysk/2026-05/schilling-daniel.jpg" alt="Daniel Schilling" class="w-full h-auto rounded-sm" />
+        <figcaption class="mt-4 text-base font-semibold text-optimist-blue">Daniel Schilling</figcaption>
+        <p class="mt-2 text-base leading-relaxed text-optimist-blue">Senior. Percussion in four bands, four years of soccer, esports. Vacation Bible School, Camp Invention counselor, drums for Immanuel Lutheran's praise band.</p>
+      </figure>
+    </div>
+    <p class="mt-6 text-base text-optimist-blue text-center">
+      Read their full stories at <a href="/someone-you-should-know/2026/may" class="underline hover:text-optimist-gold transition-colors">someone you should know &middot; May 2026</a>.
+    </p>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- What's coming up -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 py-12">
+    <p class="text-xs tracking-[0.3em] uppercase text-optimist-slate">What's coming up</p>
+    <h2 class="mt-3 text-3xl md:text-4xl font-bold text-optimist-blue">Summer</h2>
+
+    <div class="mt-10 space-y-12 text-lg leading-relaxed text-optimist-blue">
+      <div>
+        <p class="text-sm tracking-[0.2em] uppercase text-optimist-slate">Drawing Sunday, June 14</p>
+        <h3 class="mt-2 text-xl md:text-2xl font-semibold text-optimist-blue">Summer Frolic raffle</h3>
+        <p class="mt-3">Twenty dollars buys a ticket. The grand prize is ten thousand. Fifteen cash prizes in all, drawn at 5:30 in the afternoon in the beer tent at Grundahl Park. You don't need to be there to win. Tickets at Miller &amp; Sons Supermarket, the Mount Horeb Area Chamber of Commerce, or any Optimist.</p>
+      </div>
+
+      <div>
+        <figure class="mb-6">
+          <img src="/images/events/2025-kids-zone-collage.jpg" alt="A collage from last year's Kid's Zone at the Norsk July 3rd Celebration" class="w-full h-auto rounded-sm" />
+          <figcaption class="mt-3 text-sm text-optimist-slate italic text-center">Last year's Kid's Zone</figcaption>
+        </figure>
+        <p class="text-sm tracking-[0.2em] uppercase text-optimist-slate">Friday, July 3</p>
+        <h3 class="mt-2 text-xl md:text-2xl font-semibold text-optimist-blue">Kid's Zone at the Norsk July 3rd Celebration</h3>
+        <p class="mt-3">The village gathers at the Norsk Celebration on July 3rd &mdash; picnic blankets, food, fireworks at dusk. The wait can be hard on little kids, so the club fills it. Crafts, yard games, face painting, the bouncy house. Last year 200+ kids came through. Free, thanks to club fundraising. Look for the Kid's Zone tent on the afternoon and evening of July 3.</p>
+      </div>
+
+      <div>
+        <p class="text-sm tracking-[0.2em] uppercase text-optimist-slate">Coming this summer</p>
+        <h3 class="mt-2 text-xl md:text-2xl font-semibold text-optimist-blue">Cops &amp; Bobbers</h3>
+        <p class="mt-3">Kids fishing with Mount Horeb police officers at Stewart Lake. We bring the poles and the bait; you bring the kid. Date to be announced.</p>
+      </div>
+
+      <div>
+        <p class="text-sm tracking-[0.2em] uppercase text-optimist-slate">Late summer</p>
+        <h3 class="mt-2 text-xl md:text-2xl font-semibold text-optimist-blue">Self-defense workshops</h3>
+        <p class="mt-3">Two workshops late in the summer &mdash; one for women and girls, and one new this year for boys. Dates and registration details to come.</p>
+      </div>
+    </div>
+
+    <p class="mt-10 text-base text-optimist-blue text-center">
+      The full slate at <a href="/events" class="underline hover:text-optimist-gold transition-colors">events</a>.
+    </p>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- Meet an Optimist -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 py-12">
+    <p class="text-xs tracking-[0.3em] uppercase text-optimist-slate">Meet an optimist</p>
+    <h2 class="mt-3 text-3xl md:text-4xl font-bold text-optimist-blue">Kurt</h2>
+
+    <p class="mt-6 text-lg leading-relaxed text-optimist-blue italic">
+      Three questions for one of the friends who keeps the club going.
+    </p>
+
+    <div class="mt-10 space-y-10 text-lg leading-relaxed text-optimist-blue">
+      <div>
+        <p class="font-semibold text-optimist-blue">What's an Optimist event you look forward to each year?</p>
+        <p class="mt-3">The Silent Auction in February takes <em>a lot</em> of work to pull off for sure. But walking around talking with the bidders gives me energy. The financial results are always big and they make my heart smile. Seeing familiar faces also walking around the brunch area makes me feel very close to our great community. The Fiddle Band fills the space with beautiful music and has become an annual part of the day. Finally, there is always at least one person who asks me &ldquo;So, what does the Optimist Club do?&rdquo; &mdash; and I <em>love</em> answering that question with great joy that everything we do focuses on the kids in Mount Horeb.</p>
+      </div>
+      <div>
+        <p class="font-semibold text-optimist-blue">What do you most enjoy about being part of the club?</p>
+        <p class="mt-3">I believe with all my heart that my purpose in this life is to care for the children and help them thrive and find happiness. I have the gift of being approachable and fun with kids &mdash; it just comes naturally. I lean into this more so since joining the Optimist Club.</p>
+      </div>
+      <div>
+        <p class="font-semibold text-optimist-blue">What's a moment from a club event this past year that still makes you smile?</p>
+        <p class="mt-3">A kiddo told me last year at our Cops &amp; Bobbers event at Stewart Lake something close to &ldquo;Wow! You must catch a lot of fish because you put that worm on my hook in like one second!&rdquo; &mdash; <em>Haha!</em></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- How to help -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 py-12 text-center">
+    <p class="text-lg leading-relaxed text-optimist-blue">
+      Buy a raffle ticket from any Optimist. Forward this to a neighbor. Come to a meeting &mdash; third Monday, September through May, Mount Horeb Public Library, 6:45 in the evening. We'd be glad to see you.
+    </p>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- Subscribe -->
+<NewsletterSignup />
+
+<!-- End ornament -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 pt-4 pb-20 text-center">
+    <p class="text-2xl tracking-[0.5em] text-optimist-gold">&middot; &middot; &middot;</p>
+    <p class="mt-6 text-xs tracking-[0.3em] uppercase text-optimist-slate">End of Vol. 1 &middot; No. 2</p>
+  </div>
+</section>
+
+		</main>
+		<Footer />
+	</body>
+</html>

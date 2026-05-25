@@ -25,16 +25,22 @@ Preserve the contributor's voice. Fix typos and grammar (Mt → Mount Horeb, apo
 
 The spotlight subject is identified by **first name only** — no last name, no title, no photo. Section is intentionally low-key. Their answers may name other people (Ellen credited Charlie Jefko and Emily Powers) — that's about giving credit, not identifying the spotlight subject.
 
+## Meet an Optimist — question bank and asked log
+
+Questions to draw from each month live in [meet-an-optimist-question-bank.md](meet-an-optimist-question-bank.md). Log each question you use in [meet-an-optimist-asked.md](meet-an-optimist-asked.md) so we don't repeat. Regenerate the browsable HTML view (`meet-an-optimist-asked.html`) with `bash docs/render-asked-table.sh`.
+
 ## Adding a new issue
 
 Copy the prior month's file, swap dates/content, add an entry at the top of the [newsletter index](../src/pages/newsletter/index.astro). Header and Footer already link to `/newsletter`.
 
-## Pending: MailerLite phase (next)
+## MailerLite (email distribution)
 
-When we move from the web version to the email version of the newsletter, these are the must-haves JC flagged. They live on the email only — not the web version.
+The newsletter ships in two places on the same day: the web issue at `/newsletter/<year>/<month>` and the MailerLite email blast. **Web first, always.** Draft and finalize the issue in Astro where edits are easy and version-controlled. On send day (the 1st of the month), push the web version to `main` and copy the finalized prose into MailerLite's drag-and-drop editor for the email blast. The web version is the canonical archive — the email is a redistribution.
+
+The two won't look identical, and don't need to. Email is constrained (table-based layout, narrower column, conservative typography). Match brand colors (`optimist-blue`, `optimist-yellow`, `optimist-beige`) and the feel of the web version, not its exact layout.
+
+Email-only must-haves (don't appear on the web version):
 
 - **Link to the club website** (mounthoreboptimist.com) prominently in the email.
 - **Link to the club Facebook page** (facebook.com/mounthoreboptimistclub).
 - **Footer subscribe-link line**: something like *"If someone forwarded this to you, click here to join our mailing list."* Link points to the home-page newsletter signup section (or wherever the subscribe form lives at deploy time).
-
-Workflow plan: build the issue content in MailerLite's drag-and-drop editor, matching the brand colors (`optimist-blue`, `optimist-yellow`, `optimist-beige`) and the feel of the web version. The two won't look identical — and don't need to. Email is more constrained (table-based layout, narrower column, conservative typography). The web version is the canonical archive.
