@@ -36,7 +36,6 @@ These files hold the heavy content. Pull only what the task needs.
 
 ## Known cleanups — surface when relevant, don't fix unsolicited
 
-1. **Footer `/join` and `/donate` links** — pages don't exist; awaiting JC's call (build pages, remove links, or repoint to mailto/external).
-2. **Confirm domain** — [astro.config.mjs](astro.config.mjs) is set to `https://mounthoreboptimist.com` based on the contact email. If Cloudflare Pages is using a different URL (e.g., `<project>.pages.dev`), update before deploy — affects sitemap and canonicals.
-3. **Two unused npm deps** — `@astrojs/rss` and `@astrojs/mdx` are no longer used after the blog scaffold was removed. Harmless to leave; prune from `package.json` if desired.
-4. **Header.astro mixes tabs and spaces** — minor cosmetic; only matters if a linter is added.
+1. **Confirm domain** — [astro.config.mjs](astro.config.mjs) is set to `https://mounthoreboptimist.com` based on the contact email. If Cloudflare Pages is using a different URL (e.g., `<project>.pages.dev`), update before deploy — affects sitemap and canonicals.
+2. **Two unused npm deps** — `@astrojs/rss` and `@astrojs/mdx` are no longer used after the blog scaffold was removed. Harmless to leave; prune from `package.json` if desired.
+3. **Header.astro mixes tabs and spaces** — minor cosmetic; only matters if a linter is added.
