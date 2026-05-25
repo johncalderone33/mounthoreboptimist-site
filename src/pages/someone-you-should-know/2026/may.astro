@@ -1,0 +1,59 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Footer from '../../../components/Footer.astro';
+import Header from '../../../components/Header.astro';
+import SyskRecognitionNote from '../../../components/sysk/SyskRecognitionNote.astro';
+import SyskArchiveFooter from '../../../components/sysk/SyskArchiveFooter.astro';
+import { SITE_TITLE } from '../../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Someone You Should Know · May 2026 · ${SITE_TITLE}`} description="Faith Droessler and Daniel Schilling — honored by the Optimist Club of Mount Horeb, Wisconsin in May 2026." />
+	</head>
+	<body>
+		<Header />
+		<main>
+
+<!-- Title -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-16 text-center">
+    <p class="text-sm tracking-[0.3em] uppercase text-optimist-slate">Someone You Should Know</p>
+    <h1 class="mt-4 text-4xl md:text-5xl font-bold text-optimist-blue">May 2026</h1>
+  </div>
+</section>
+
+<!-- Faith Droessler -->
+<section class="bg-optimist-beige">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <img src="/images/sysk/2026-05/droessler-faith.jpg" alt="Faith Droessler" class="w-full h-auto rounded-sm" />
+    <h2 class="mt-10 text-3xl md:text-4xl font-bold text-optimist-blue text-center">Faith Droessler</h2>
+    <div class="mt-10 space-y-6 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      <p>Faith is a senior at Mount Horeb High School who keeps a full slate. She runs cross country, performs in the high school musical, and is active in the drama club. She co-founded and co-leads the Writers' Collective, a student writing group at the high school.</p>
+      <p>Outside of school, Faith works at Children's Community School. She loves the part of the job that drew her to it &mdash; being with the kids and helping guide them through their days.</p>
+    </div>
+    <p class="mt-10 text-center text-lg md:text-xl text-optimist-blue"><em>Faith Droessler</em> is Someone You Should Know.</p>
+  </div>
+</section>
+
+<!-- Daniel Schilling -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <img src="/images/sysk/2026-05/schilling-daniel.jpg" alt="Daniel Schilling" class="w-full h-auto rounded-sm" />
+    <h2 class="mt-10 text-3xl md:text-4xl font-bold text-optimist-blue text-center">Daniel Schilling</h2>
+    <div class="mt-10 space-y-6 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      <p>Daniel is a senior at Mount Horeb High School. He earned one of six percussion spots back in middle school and has been a member of Marching Band, Concert Band, Varsity Band, and Jazz Band ever since, performing each year at Solo and Ensemble. Percussionists know that the music isn't the whole job &mdash; the gear has to be loaded and unloaded too &mdash; and Daniel has carried that ethic into the rest of his school life. He volunteered during summer school and tutored middle school students at the fall music camp. He has also played four years of high school soccer; in his junior year he broke an early-season slump by scoring the first goal of the season. He now assists Coach Gage at the summer soccer camp and is working toward becoming a soccer referee. As a senior Daniel joined the high school's esports club.</p>
+      <p>Outside of school, Daniel plays drums for Immanuel Lutheran Church's praise band. He volunteers each summer at Vacation Bible School, where he helps build the sets and scenes for the rooms, counsels kids through the week, and runs tech for the opening and closing gatherings. He volunteers with Neighbors Helping Neighbors, greeting visitors and loading vehicles. As a kid Daniel attended Camp Invention, the STEM camp where kids work hands-on with science and technology; once he was old enough he came back as a counselor. He has helped raise money for the soccer club at Mount Horeb Summer Frolic and Brats in the Lot, and for the high school's London trip at the Farmers Market and the Country Music Faire.</p>
+    </div>
+    <p class="mt-10 text-center text-lg md:text-xl text-optimist-blue"><em>Daniel Schilling</em> is Someone You Should Know.</p>
+  </div>
+</section>
+
+<SyskRecognitionNote />
+<SyskArchiveFooter />
+
+		</main>
+		<Footer />
+	</body>
+</html>
