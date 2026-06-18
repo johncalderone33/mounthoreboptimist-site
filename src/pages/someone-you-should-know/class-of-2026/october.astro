@@ -1,0 +1,59 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Footer from '../../../components/Footer.astro';
+import Header from '../../../components/Header.astro';
+import SyskRecognitionNote from '../../../components/sysk/SyskRecognitionNote.astro';
+import SyskArchiveFooter from '../../../components/sysk/SyskArchiveFooter.astro';
+import { SITE_TITLE } from '../../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Someone You Should Know · October 2025 · ${SITE_TITLE}`} description="Eleanor Guenther and Lily Nelson — honored by the Optimist Club of Mount Horeb, Wisconsin in October 2025." />
+	</head>
+	<body>
+		<Header />
+		<main>
+
+<!-- Title -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-16 text-center">
+    <p class="text-sm tracking-[0.3em] uppercase text-optimist-slate">Someone You Should Know</p>
+    <h1 class="mt-4 text-4xl md:text-5xl font-bold text-optimist-blue">October 2025</h1>
+  </div>
+</section>
+
+<!-- Eleanor Guenther -->
+<section class="bg-optimist-beige">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <img src="/images/sysk/2025-10/guenther-eleanor.jpg" alt="Eleanor Guenther" class="w-full h-auto rounded-sm" />
+    <h2 class="mt-10 text-3xl md:text-4xl font-bold text-optimist-blue text-center">Eleanor Guenther</h2>
+    <div class="mt-10 space-y-6 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      <p>Eleanor is a senior at Mount Horeb High School. She has earned academic honors and was chosen to attend Badger Girls State and to serve as a Student Rotarian. She plays tenor saxophone in jazz band &mdash; Thursday Jazz her first two years, Tuesday Jazz the last two. She played varsity soccer her freshman and sophomore years, ran two seasons of varsity track, and was named track Newcomer of the Year. She trains in weightlifting at Functional Integrated Training in Fitchburg. She is in her second year on Student Council, joined Link Crew this year, and serves as the Social Media Officer for Club Interact. She is a member of the National Honor Society, the National Art Honor Society, and Letters of Love.</p>
+      <p>Outside of school, Eleanor has spent the last two summers as a Once Upon a Time volunteer &mdash; doing hair as a sophomore, then joining the cast as a princess as a junior, with another summer as a princess ahead of her. She has volunteered with the district's summer school for two years. She was honored at the October meeting of the Optimist Club with her parents Kim and Randy.</p>
+    </div>
+    <p class="mt-10 text-center text-lg md:text-xl text-optimist-blue"><em>Eleanor Guenther</em> is Someone You Should Know.</p>
+  </div>
+</section>
+
+<!-- Lily Nelson -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <img src="/images/sysk/2025-10/nelson-lily.jpg" alt="Lily Nelson" class="w-full h-auto rounded-sm" />
+    <h2 class="mt-10 text-3xl md:text-4xl font-bold text-optimist-blue text-center">Lily Nelson</h2>
+    <div class="mt-10 space-y-6 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      <p>Lily is a senior at Mount Horeb High School and a National Merit semifinalist. With a friend she started the high school's first writing club &mdash; the Writers' Collective &mdash; and has run its bi-weekly meetings for four years. She is the student director of Drama Club, where she has had a lead role every year, and she sings in Madrigal, Vocal Jazz, Chamber Choir, and the general choir. She plays clarinet in marching, pep, and concert bands, and occasionally in jazz band. She leads the ecology committee on the Green Team and is planning a school garden on unused land on the high school campus, converting it to native habitat. Four years of Student Council, four years of Track and Field, team captain for Cross Country, member of the National Honor Society. As a freshman she started two activism clubs &mdash; the Social Justice Club and the POWER Club &mdash; that she still helps lead.</p>
+      <p>Outside of school, Lily sings in honors choirs and the Madison Youth Choirs. She teaches swim lessons to kids ages two through twelve at Swimwest Swim School. She has volunteered with the district's summer school and Camp Invention, and she works in her church's food pantry garden, which grows produce for local food pantries. She is a pen pal with a third grader at Orchard Ridge Elementary through her church's pen pal program. The Optimist Club is especially proud to share that Lily won the Club, Zone, and Regional levels of the Optimist Oratorical Competition this year, then competed at the National Oratorical Competition in St. Louis. She was honored at the October meeting of the Optimist Club with her parents Becky and Andy.</p>
+    </div>
+    <p class="mt-10 text-center text-lg md:text-xl text-optimist-blue"><em>Lily Nelson</em> is Someone You Should Know.</p>
+  </div>
+</section>
+
+<SyskRecognitionNote />
+<SyskArchiveFooter />
+
+		</main>
+		<Footer />
+	</body>
+</html>

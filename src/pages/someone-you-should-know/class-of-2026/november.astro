@@ -1,0 +1,59 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Footer from '../../../components/Footer.astro';
+import Header from '../../../components/Header.astro';
+import SyskRecognitionNote from '../../../components/sysk/SyskRecognitionNote.astro';
+import SyskArchiveFooter from '../../../components/sysk/SyskArchiveFooter.astro';
+import { SITE_TITLE } from '../../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Someone You Should Know · November 2025 · ${SITE_TITLE}`} description="Laurel Aquino and Leah Kellesvig — honored by the Optimist Club of Mount Horeb, Wisconsin in November 2025." />
+	</head>
+	<body>
+		<Header />
+		<main>
+
+<!-- Title -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-16 text-center">
+    <p class="text-sm tracking-[0.3em] uppercase text-optimist-slate">Someone You Should Know</p>
+    <h1 class="mt-4 text-4xl md:text-5xl font-bold text-optimist-blue">November 2025</h1>
+  </div>
+</section>
+
+<!-- Laurel Aquino -->
+<section class="bg-optimist-beige">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <img src="/images/sysk/2025-11/aquino-laurel.jpg" alt="Laurel Aquino" class="w-full h-auto rounded-sm" />
+    <h2 class="mt-10 text-3xl md:text-4xl font-bold text-optimist-blue text-center">Laurel Aquino</h2>
+    <div class="mt-10 space-y-6 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      <p>Laurel is a senior at Mount Horeb High School. She is in her fourth year as a member of DECA, has served as an officer for three years, and is the chapter president this year. She has competed at the state and international levels for three years &mdash; state champion, and a fourth-place international finisher in 2025. She is an AP Scholar and a Rotary Ethics Symposium attendee. She manages the stage crew for the high school musical and is on the Drama Club stage crew. She sings in choir, plays in band and jazz band, and is a state Solo and Ensemble qualifier. She has been a member of Ecology Club, Club Interact, Student Council, Link Crew, POWER Club, and the National Honor Society, and she played on the girls soccer team.</p>
+      <p>Outside of school, Laurel has mentored elementary readers in summer school and volunteered at Camp Invention. At Neighbors Helping Neighbors she most often serves as a shopper &mdash; walking through the food pantry with clients, helping them choose, bagging and weighing &mdash; and she also greets visitors at the door and helps load groceries into cars. Through Club Interact she has made cards for seniors and veterans, care packages for people experiencing homelessness, toys for the Dane County Humane Society, and tie blankets for kids in the hospital. She helped organize the DECA fundraising event Once Upon a Time. She was honored at the November meeting of the Optimist Club with her parents Kellie and Mark.</p>
+    </div>
+    <p class="mt-10 text-center text-lg md:text-xl text-optimist-blue"><em>Laurel Aquino</em> is Someone You Should Know.</p>
+  </div>
+</section>
+
+<!-- Leah Kellesvig -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <img src="/images/sysk/2025-11/kellesvig-leah.jpg" alt="Leah Kellesvig" class="w-full h-auto rounded-sm" />
+    <h2 class="mt-10 text-3xl md:text-4xl font-bold text-optimist-blue text-center">Leah Kellesvig</h2>
+    <div class="mt-10 space-y-6 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      <p>Leah is a senior at Mount Horeb High School. She is the percussion captain in band this year, after years of playing in concert, marching, and varsity band. She sings in Concert Choir and Chamber Singers and performs in the jazz ensembles and jazz combo. For three years she has played in the musical orchestra on percussion, string upright bass, violin, and electric bass guitar. She is a member of the National Art Honor Society and has been on the girls golf and cross country teams.</p>
+      <p>Outside of school, Leah is a constant set of hands. She has helped at Agape Christian Preschool's summer camps, and worked the Brats in the Lot fundraisers for the Evangelical Lutheran Church, Immanuel Lutheran's youth group, and Agape Preschool. She has staffed concessions at the BDL Tournament and the Mount Horeb Summer Frolic. She has helped with high school London trip fundraisers &mdash; movie night, the July Norsk event, the Country Music Faire &mdash; and pitched in for middle school teacher classroom setup, Taste of Jazz, Solo and Ensemble, and Band Uniform Distribution Day. She has been at the Mount Horeb Art Fair, the Optimist Club Silent Auction, and Summer Frolic for setup and cleanup for years. She helped make cinnamon rolls for the church's Easter breakfast, served on the music team at the ELCA Youth Event, and volunteered at Capitol City Band concerts. And &mdash; closer to home for us &mdash; she painted faces at the club's Cops and Bobbers. She was honored at the November meeting of the Optimist Club with her parents Amy and Greg.</p>
+    </div>
+    <p class="mt-10 text-center text-lg md:text-xl text-optimist-blue"><em>Leah Kellesvig</em> is Someone You Should Know.</p>
+  </div>
+</section>
+
+<SyskRecognitionNote />
+<SyskArchiveFooter />
+
+		</main>
+		<Footer />
+	</body>
+</html>
