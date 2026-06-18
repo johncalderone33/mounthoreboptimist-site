@@ -1,0 +1,157 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Footer from '../../../components/Footer.astro';
+import Header from '../../../components/Header.astro';
+import { SITE_TITLE } from '../../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title={`Nominate a student · ${SITE_TITLE}`}
+			description="Nominate a Mount Horeb High School senior for the Optimist Club of Mount Horeb's 'Someone You Should Know' recognition."
+		/>
+	</head>
+	<body>
+		<Header />
+		<main>
+
+<!-- Title + intro -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-20 text-center">
+    <p class="text-sm tracking-[0.3em] uppercase text-optimist-slate">Someone You Should Know</p>
+    <h1 class="mt-6 text-4xl md:text-5xl font-bold text-optimist-blue">Nominate a senior</h1>
+    <p class="mt-10 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      The Optimist Club of Mount Horeb honors local high school seniors for outstanding community service. Each honoree is recognized at one of our monthly meetings, and five graduating seniors also receive a $500 Optimist Club scholarship at senior awards night in May. We'd love your help finding them.
+    </p>
+    <p class="mt-6 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      The mission of Optimist International is simple &mdash; by providing hope and positive vision, Optimists bring out the best in youth, our communities, and ourselves. That's the work, in every club, including ours.
+    </p>
+  </div>
+</section>
+
+<!-- Eligibility + window + disclaimer -->
+<section class="bg-optimist-beige">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <div class="space-y-6 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      <p>
+        Mount Horeb grows more good kids than we could ever hope to honor. We choose up to eighteen seniors a year &mdash; two at a time at our monthly meetings &mdash; and the hard truth is that we have to leave wonderful young people off the list. Every nomination is read with care, and even the ones we can't include tell us something about the student, and about the person who took the time to say so.
+      </p>
+      <p>
+        What we're hoping you'll help us find isn't the top of the class or the captain of the team &mdash; though plenty of them are. We're looking for the senior who gives their time to this community, especially in the ways that lift up younger kids. There's no single mold for it. Some have volunteered in a handful of places; some have started something of their own, led a club, or gone off to do real good somewhere and come home to do more of it. What they share is a habit of showing up for other people, on top of everything a senior year already asks of them. These are future Optimists, whether they ever join a club or not &mdash; they are already doing the very thing we try to do: believing in young people, and giving their time away. If you know a Mount Horeb senior like that, we would truly love to hear about them.
+      </p>
+      <p>
+        All high school seniors &mdash; public, private, and home-schooled &mdash; who live in the Mount Horeb school district are eligible. We are accepting nominations for the 2026&ndash;27 school year through <strong>April 1, 2027</strong>. Past honorees are featured <a href="/someone-you-should-know" class="underline">here</a> and on our <a href="https://www.facebook.com/mounthoreboptimistclub" target="_blank" rel="noopener" class="underline">Facebook page</a>, if you'd like to see the kind of young people we mean.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- The form -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-20">
+    <h2 class="text-3xl md:text-4xl font-bold text-optimist-blue text-center">Tell us about your nominee</h2>
+    <p class="mt-6 text-lg md:text-xl leading-relaxed text-optimist-blue text-center">
+      A short paragraph or two is plenty. If we need more, we'll contact you.
+    </p>
+
+    <div
+      id="form-error"
+      class="hidden mt-10 mx-auto max-w-xl rounded-sm border border-optimist-gold bg-optimist-beige px-6 py-4 text-base text-optimist-blue text-center"
+    >
+      Something went wrong sending your nomination. Please try again, or email us directly at <a href="mailto:sysk@mounthoreboptimist.com" class="underline">sysk@mounthoreboptimist.com</a>.
+    </div>
+
+    <form
+      method="POST"
+      action="/api/nominate"
+      class="mt-12 space-y-6 text-optimist-blue"
+    >
+      <!-- Honeypot: bots fill this, humans don't see it -->
+      <div class="hidden" aria-hidden="true">
+        <label>Leave this field empty
+          <input type="text" name="company" tabindex="-1" autocomplete="off" />
+        </label>
+      </div>
+
+      <div>
+        <label for="nominator_name" class="block text-sm tracking-[0.2em] uppercase text-optimist-slate">Your name</label>
+        <input
+          type="text" id="nominator_name" name="nominator_name" required
+          class="mt-2 w-full rounded-sm border border-optimist-stone bg-white px-4 py-3 text-lg text-optimist-blue focus:outline-none focus:border-optimist-blue"
+        />
+      </div>
+
+      <div>
+        <label for="nominator_email" class="block text-sm tracking-[0.2em] uppercase text-optimist-slate">Your email</label>
+        <input
+          type="email" id="nominator_email" name="nominator_email" required
+          class="mt-2 w-full rounded-sm border border-optimist-stone bg-white px-4 py-3 text-lg text-optimist-blue focus:outline-none focus:border-optimist-blue"
+        />
+      </div>
+
+      <div>
+        <label for="nominator_phone" class="block text-sm tracking-[0.2em] uppercase text-optimist-slate">Your phone</label>
+        <input
+          type="tel" id="nominator_phone" name="nominator_phone" required
+          class="mt-2 w-full rounded-sm border border-optimist-stone bg-white px-4 py-3 text-lg text-optimist-blue focus:outline-none focus:border-optimist-blue"
+        />
+      </div>
+
+      <div>
+        <label for="nominee_name" class="block text-sm tracking-[0.2em] uppercase text-optimist-slate">Nominee's name</label>
+        <input
+          type="text" id="nominee_name" name="nominee_name" required
+          class="mt-2 w-full rounded-sm border border-optimist-stone bg-white px-4 py-3 text-lg text-optimist-blue focus:outline-none focus:border-optimist-blue"
+        />
+      </div>
+
+      <div>
+        <label for="nominee_about" class="block text-sm tracking-[0.2em] uppercase text-optimist-slate">Why you're nominating them</label>
+        <textarea
+          id="nominee_about" name="nominee_about" required rows="6" maxlength="2000"
+          class="mt-2 w-full rounded-sm border border-optimist-stone bg-white px-4 py-3 text-lg text-optimist-blue focus:outline-none focus:border-optimist-blue"
+        ></textarea>
+      </div>
+
+      <div class="pt-4 text-center">
+        <button
+          type="submit"
+          class="inline-block px-10 py-3 rounded-full bg-optimist-yellow text-optimist-blue font-semibold hover:bg-optimist-gold transition-colors"
+        >
+          Submit nomination
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<script is:inline>
+  if (new URLSearchParams(window.location.search).has('error')) {
+    document.getElementById('form-error')?.classList.remove('hidden');
+  }
+</script>
+
+<!-- Quote + OI logo -->
+<section class="bg-optimist-beige">
+  <div class="max-w-3xl mx-auto px-6 py-16 text-center">
+    <blockquote class="text-lg md:text-xl italic text-optimist-blue leading-relaxed">
+      "Those who are happiest are those who do the most for others."
+      <footer class="mt-3 not-italic text-base text-optimist-slate">&mdash; Booker T. Washington</footer>
+    </blockquote>
+    <img
+      src="/images/mho-club-roundel.jpg"
+      alt="Optimist Club of Mount Horeb, Wisconsin"
+      class="mt-12 mx-auto h-32 w-auto rounded-full"
+    />
+    <p class="mt-4 text-sm tracking-[0.2em] uppercase text-optimist-blue font-semibold">
+      Optimist Club of Mount Horeb, Wisconsin
+    </p>
+  </div>
+</section>
+
+		</main>
+		<Footer />
+	</body>
+</html>

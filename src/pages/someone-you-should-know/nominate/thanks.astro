@@ -1,0 +1,36 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Footer from '../../../components/Footer.astro';
+import Header from '../../../components/Header.astro';
+import { SITE_TITLE } from '../../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title={`Thank you · ${SITE_TITLE}`}
+			description="Thank you for nominating a Mount Horeb senior for the Optimist Club's 'Someone You Should Know' scholarship award."
+		/>
+	</head>
+	<body>
+		<Header />
+		<main>
+
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-24 text-center">
+    <p class="text-sm tracking-[0.3em] uppercase text-optimist-slate">Nomination received</p>
+    <h1 class="mt-6 text-4xl md:text-5xl font-bold text-optimist-blue">Thank you</h1>
+    <p class="mt-10 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      Your nomination is in. One of us will read it carefully. If we need anything more, we'll be in touch &mdash; and thank you for supporting one of Mount Horeb's kids.
+    </p>
+    <a href="/someone-you-should-know" class="inline-block mt-12 px-8 py-3 rounded-full bg-optimist-yellow text-optimist-blue font-semibold hover:bg-optimist-gold transition-colors">
+      Back to Someone You Should Know
+    </a>
+  </div>
+</section>
+
+		</main>
+		<Footer />
+	</body>
+</html>
