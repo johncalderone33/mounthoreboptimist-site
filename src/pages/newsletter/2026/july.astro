@@ -1,0 +1,234 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Footer from '../../../components/Footer.astro';
+import Header from '../../../components/Header.astro';
+import NewsletterSignup from '../../../components/NewsletterSignup.astro';
+import { SITE_TITLE } from '../../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title={`Newsletter · July 2026 · ${SITE_TITLE}`}
+			description="The Mount Horeb Optimist — Volume 1, Number 3, July 2026. The monthly newsletter from the Optimist Club of Mount Horeb, Wisconsin."
+		/>
+	</head>
+	<body>
+		<Header />
+		<main>
+
+<!-- Masthead -->
+<section class="bg-white">
+  <div class="max-w-5xl mx-auto px-6 pt-20 pb-12">
+    <div class="border-y-4 border-double border-optimist-blue py-10 text-center">
+      <p class="text-xs tracking-[0.4em] uppercase text-optimist-slate">Optimist Club of Mount Horeb, Wisconsin</p>
+      <h1 class="mt-6 font-bold text-optimist-blue leading-none font-masthead uppercase tracking-tight whitespace-nowrap text-[clamp(1.25rem,6vw,4rem)]">The Mount Horeb Optimist</h1>
+      <p class="mt-6 text-sm tracking-[0.3em] uppercase text-optimist-slate">Vol. 1 &middot; No. 3 &middot; July 2026</p>
+    </div>
+  </div>
+</section>
+
+<!-- Opening -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 pb-12">
+    <p class="text-lg md:text-xl leading-relaxed text-optimist-blue italic">
+      June was the start of summer at the club. Fishing rods at Stewart Park, the Frolic raffle, and the bouncy house out of storage. We don't meet again until September &mdash; but a lot still happens between now and then. Here's June, the seniors we met this past year, and what's around the corner.
+    </p>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- What happened in June -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 py-12">
+    <p class="text-xs tracking-[0.3em] uppercase text-optimist-slate">What happened</p>
+    <h2 class="mt-3 text-3xl md:text-4xl font-bold text-optimist-blue">Cops and Bobbers at Stewart Park</h2>
+    <figure class="mt-8">
+      <img src="/images/events/cops-and-bobbers-3.jpg" alt="Families fishing at Cops and Bobbers" class="w-full h-auto rounded-sm" />
+    </figure>
+    <div class="mt-8 space-y-5 text-lg leading-relaxed text-optimist-blue">
+      <p>Cops and Bobbers was a terrific success on Sat June 6th, with beautiful weather to help boost attendance! This is an annual event held at Stewart Park coordinated and sponsored by the Mount Horeb Optimist Club, the Recreation department as well as the Mount Horeb Police Department. It's a great opportunity for kids to learn how to fish and to mingle with law enforcement officers in a family-friendly environment.</p>
+    </div>
+    <div class="mt-8 grid grid-cols-2 gap-4">
+      <figure>
+        <img src="/images/events/cops-and-bobbers-2.jpg" alt="A kid fishing at Cops and Bobbers" class="w-full h-auto rounded-sm" />
+      </figure>
+      <figure>
+        <img src="/images/events/cops-and-bobbers-4.jpg" alt="A kid fishing at Cops and Bobbers" class="w-full h-auto rounded-sm" />
+      </figure>
+    </div>
+    <figure class="mt-4">
+      <img src="/images/events/cops-and-bobbers-5.jpg" alt="Families fishing at Cops and Bobbers" class="w-full h-auto rounded-sm" />
+    </figure>
+  </div>
+</section>
+
+<!-- Frolic recap -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6">
+    <h2 class="mt-3 text-3xl md:text-4xl font-bold text-optimist-blue">The Frolic</h2>
+    <div class="mt-8 space-y-5 text-lg leading-relaxed text-optimist-blue">
+      <p>The Frolic is Mount Horeb's big summer weekend, and the club is right in the middle of it. Burger shifts at the grill. The raffle, with its proceeds going back to local youth. And, the way it goes every year, an Optimist up front as emcee for the parade.</p>
+      <p>There was music, too &mdash; PARTWAYS, an alternative band of former Mount Horeb High School students, played a Sunday afternoon set, fronted by Leah Kellesvig, one of the seniors we honored this year as Someone You Should Know. A good weekend to be a neighbor.</p>
+    </div>
+  </div>
+
+  <div class="max-w-3xl mx-auto px-6 pb-12">
+    <div class="mt-8 grid grid-cols-2 gap-4">
+      <figure>
+        <img src="/images/events/2026frolic/frolic-band.webp" alt="PARTWAYS, an alternative band of former Mount Horeb High School students, playing at the Frolic" class="w-full h-auto rounded-sm" />
+      </figure>
+      <figure>
+        <img src="/images/events/2026frolic/frolic-leah.webp" alt="Leah Kellesvig singing and playing bass with the band at the Frolic" class="w-full h-auto rounded-sm" />
+      </figure>
+    </div>
+
+    <figure class="mt-4 max-w-sm mx-auto">
+      <img src="/images/events/2026frolic/frolic-ellen.webp" alt="An Optimist emceeing the Frolic parade" class="w-full h-auto rounded-sm" />
+    </figure>
+
+    <div class="mt-4 grid grid-cols-2 gap-4">
+      <figure>
+        <img src="/images/events/2026frolic/frolic-amy.webp" alt="Optimist Club members grilling at the Frolic" class="w-full h-auto rounded-sm" />
+      </figure>
+      <figure>
+        <img src="/images/events/2026frolic/frolic-tickets.webp" alt="Selling raffle tickets at the Frolic" class="w-full h-auto rounded-sm" />
+      </figure>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- Someone You Should Know — summer recap (October + November) -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 py-12">
+    <p class="text-xs tracking-[0.3em] uppercase text-optimist-slate">Someone you should know</p>
+    <h2 class="mt-3 text-3xl md:text-4xl font-bold text-optimist-blue">The seniors we met this year</h2>
+
+    <p class="mt-6 text-lg leading-relaxed text-optimist-blue italic">
+      The club doesn't meet in June, July, or August. So over these three summer issues we'll re-introduce the Class of 2026 &mdash; the high school seniors we got to honor this past school year. Up first: the four we met in October and November.
+    </p>
+
+    <div class="mt-12 grid grid-cols-2 gap-6">
+      <figure>
+        <img src="/images/sysk/2025-10/guenther-eleanor.jpg" alt="Eleanor Guenther" class="w-full h-auto rounded-sm" />
+        <figcaption class="mt-4 text-base font-semibold text-optimist-blue">Eleanor Guenther</figcaption>
+        <p class="mt-2 text-base leading-relaxed text-optimist-blue">Honored at the October meeting of the Optimist Club with her parents Kim and Randy.</p>
+      </figure>
+      <figure>
+        <img src="/images/sysk/2025-10/nelson-lily.jpg" alt="Lily Nelson" class="w-full h-auto rounded-sm" />
+        <figcaption class="mt-4 text-base font-semibold text-optimist-blue">Lily Nelson</figcaption>
+        <p class="mt-2 text-base leading-relaxed text-optimist-blue">Honored at the October meeting of the Optimist Club with her parents Becky and Andy.</p>
+      </figure>
+      <figure>
+        <img src="/images/sysk/2025-11/aquino-laurel.jpg" alt="Laurel Aquino" class="w-full h-auto rounded-sm" />
+        <figcaption class="mt-4 text-base font-semibold text-optimist-blue">Laurel Aquino</figcaption>
+        <p class="mt-2 text-base leading-relaxed text-optimist-blue">Honored at the November meeting of the Optimist Club with her parents Kellie and Mark.</p>
+      </figure>
+      <figure>
+        <img src="/images/sysk/2025-11/kellesvig-leah.jpg" alt="Leah Kellesvig" class="w-full h-auto rounded-sm" />
+        <figcaption class="mt-4 text-base font-semibold text-optimist-blue">Leah Kellesvig</figcaption>
+        <p class="mt-2 text-base leading-relaxed text-optimist-blue">Honored at the November meeting of the Optimist Club with her parents Amy and Greg.</p>
+      </figure>
+    </div>
+    <p class="mt-10 text-base text-optimist-blue text-center">
+      Read their full stories at <a href="/someone-you-should-know/class-of-2026" class="underline hover:text-optimist-gold transition-colors">someone you should know &middot; class of 2026</a>.
+    </p>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- What's coming up -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 py-12">
+    <p class="text-xs tracking-[0.3em] uppercase text-optimist-slate">What's coming up</p>
+    <h2 class="mt-3 text-3xl md:text-4xl font-bold text-optimist-blue">July and August</h2>
+
+    <div class="mt-10 space-y-12 text-lg leading-relaxed text-optimist-blue">
+      <div>
+        <figure class="mb-6">
+          <img src="/images/events/2025-kids-zone-collage.jpg" alt="A collage from last year's Kid's Zone at the Norsk July 3rd Celebration" class="w-full h-auto rounded-sm" />
+          <figcaption class="mt-3 text-sm text-optimist-slate italic text-center">Last year's Kid's Zone</figcaption>
+        </figure>
+        <p class="text-sm tracking-[0.2em] uppercase text-optimist-slate">Friday, July 3</p>
+        <h3 class="mt-2 text-xl md:text-2xl font-semibold text-optimist-blue">Kid's Zone at the Norsk July 3rd Celebration</h3>
+        <p class="mt-3">The village gathers at the Norsk Celebration on July 3rd &mdash; picnic blankets, food, fireworks at dusk. The wait can be hard on little kids, so the club fills it. Crafts, yard games, face painting, the bouncy house. Last year 200+ kids came through. Free, thanks to club fundraising. Look for the Kid's Zone tent on the afternoon and evening of July 3.</p>
+      </div>
+
+      <div>
+        <p class="text-sm tracking-[0.2em] uppercase text-optimist-slate">Late July</p>
+        <h3 class="mt-2 text-xl md:text-2xl font-semibold text-optimist-blue">Optimist summer picnic</h3>
+        <p class="mt-3">Once a year, the club trades work for play. On a Monday evening in late July, the Optimists gather at Grundahl Park for a family picnic &mdash; spouses, kids, lawn games, board games. It's a potluck; Ellen brings the grill, everyone else brings a dish and their fun.</p>
+      </div>
+
+      <div>
+        <p class="text-sm tracking-[0.2em] uppercase text-optimist-slate">July 27 &amp; August 10</p>
+        <h3 class="mt-2 text-xl md:text-2xl font-semibold text-optimist-blue">Self-defense workshops</h3>
+        <p class="mt-3">Two workshops this summer, taught by Brandon Tracy, a Verona-based martial arts instructor. The class for women and girls runs August 10, 6 to 8 pm; new this year, a class for boys on July 27. Both at the Violet Room at Wisconsin Surplus Auction, which donates the space.</p>
+      </div>
+    </div>
+
+    <p class="mt-10 text-base text-optimist-blue text-center">
+      The full slate at <a href="/events" class="underline hover:text-optimist-gold transition-colors">events</a>.
+    </p>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- Meet an Optimist — placeholder, subject TBD -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 py-12">
+    <p class="text-xs tracking-[0.3em] uppercase text-optimist-slate">Meet an optimist</p>
+    <h2 class="mt-3 text-3xl md:text-4xl font-bold text-optimist-blue">Cynthia</h2>
+
+    <p class="mt-6 text-lg leading-relaxed text-optimist-blue italic">
+      Three questions for one of the friends who keeps the club going.
+    </p>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- How to help -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 py-12 text-center">
+    <p class="text-lg leading-relaxed text-optimist-blue">
+      Find us at the Kid's Zone on July 3. Forward this to a neighbor. Come to a meeting when we start back up in September &mdash; third Monday, Mount Horeb Public Library, 6:45 in the evening. We'd be glad to see you.
+    </p>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- Subscribe -->
+<NewsletterSignup />
+
+<!-- End ornament -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 pt-4 pb-20 text-center">
+    <p class="text-2xl tracking-[0.5em] text-optimist-gold">&middot; &middot; &middot;</p>
+    <p class="mt-6 text-xs tracking-[0.3em] uppercase text-optimist-slate">End of Vol. 1 &middot; No. 3</p>
+  </div>
+</section>
+
+		</main>
+		<Footer />
+	</body>
+</html>
