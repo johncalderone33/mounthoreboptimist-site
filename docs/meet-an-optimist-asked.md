@@ -10,3 +10,6 @@ A running log of every question used in the newsletter's "Meet an Optimist" sect
 | Kurt | June | 2026 | What's an Optimist event you look forward to each year? |
 | Kurt | June | 2026 | What do you most enjoy about being part of the club? |
 | Kurt | June | 2026 | What's a moment from a club event this past year that still makes you smile? |
+| Cynthia | July | 2026 | What's the best part of meeting the families in the Someone You Should Know program? |
+| Cynthia | July | 2026 | What's an Optimist tradition you'd never want to give up? |
+| Cynthia | July | 2026 | Joining a new club can be hard. How do Mount Horeb Optimists make new members feel right at home? |
