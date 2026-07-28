@@ -13,3 +13,6 @@ A running log of every question used in the newsletter's "Meet an Optimist" sect
 | Cynthia | July | 2026 | What's the best part of meeting the families in the Someone You Should Know program? |
 | Cynthia | July | 2026 | What's an Optimist tradition you'd never want to give up? |
 | Cynthia | July | 2026 | Joining a new club can be hard. How do Mount Horeb Optimists make new members feel right at home? |
+| John | August | 2026 | As a new member this year, what surprised you most? |
+| John | August | 2026 | What's one thing you've learned? |
+| John | August | 2026 | With a new Optimist year almost upon us, what are your hopes for the 2026–27 school year? |
