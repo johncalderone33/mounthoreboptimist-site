@@ -16,3 +16,6 @@ A running log of every question used in the newsletter's "Meet an Optimist" sect
 | John | August | 2026 | As a new member this year, what surprised you most? |
 | John | August | 2026 | What's one thing you've learned? |
 | John | August | 2026 | With a new Optimist year almost upon us, what are your hopes for the 2026–27 school year? |
+| Emily | September | 2026 | The Kid's Zone has your fingerprints all over it. What is it about that night that keeps you coming back? |
+| Emily | September | 2026 | What's something simple about being an Optimist that people might not expect? |
+| Emily | September | 2026 | If a friend asked what an Optimist meeting is like, what would you tell them? |

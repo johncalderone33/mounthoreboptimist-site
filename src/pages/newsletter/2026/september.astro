@@ -1,0 +1,227 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Footer from '../../../components/Footer.astro';
+import Header from '../../../components/Header.astro';
+import NewsletterSignup from '../../../components/NewsletterSignup.astro';
+import { SITE_TITLE } from '../../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title={`Newsletter · September 2026 · ${SITE_TITLE}`}
+			description="The Mount Horeb Optimist — Volume 1, Number 5, September 2026. The monthly newsletter from the Optimist Club of Mount Horeb, Wisconsin."
+		/>
+	</head>
+	<body>
+		<Header />
+		<main>
+
+<!-- Masthead -->
+<section class="bg-white">
+  <div class="max-w-5xl mx-auto px-6 pt-20 pb-12">
+    <div class="border-y-4 border-double border-optimist-blue py-10 text-center">
+      <p class="text-xs tracking-[0.4em] uppercase text-optimist-slate">Optimist Club of Mount Horeb, Wisconsin</p>
+      <h1 class="mt-6 font-bold text-optimist-blue leading-none font-masthead uppercase tracking-tight whitespace-nowrap text-[clamp(1.25rem,6vw,4rem)]">The Mount Horeb Optimist</h1>
+      <p class="mt-6 text-sm tracking-[0.3em] uppercase text-optimist-slate">Vol. 1 &middot; No. 5 &middot; September 2026</p>
+    </div>
+  </div>
+</section>
+
+<!-- Opening -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 pb-12">
+    <p class="text-lg md:text-xl leading-relaxed text-optimist-blue italic">
+      August was summer's last full breath. A room full of neighbors learning to defend themselves, one more evening together before the season turned &mdash; and then the lights come back on. Third Monday of September, back at the Mount Horeb Public Library, a new Optimist year begins.
+    </p>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- What happened in August: Women's Self-Defense Workshop -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 py-12">
+    <p class="text-xs tracking-[0.3em] uppercase text-optimist-slate">What happened</p>
+    <h2 class="mt-3 text-3xl md:text-4xl font-bold text-optimist-blue">A full room for the Women's Self-Defense Workshop</h2>
+    <figure class="mt-8">
+      <img src="/images/events/2026SelfDefense/group.jpg" alt="The women who turned out for the workshop, gathered for a group photo with instructor Brandon Tracy" class="w-full h-auto rounded-sm" />
+    </figure>
+    <div class="mt-8 space-y-5 text-lg leading-relaxed text-optimist-blue">
+      <p>Eighteen women filled the Violet Room at Wisconsin Surplus Auction &mdash; which donates the space &mdash; for a couple hours of hands-on self-defense. Real, practical skills, worked on the pads in a room full of neighbors. Master Brandon Tracy, a fifth-degree black belt and self-defense specialist, led the session along with his assistant Evan, and by every account did a phenomenal job.</p>
+      <p>Everyone left having learned some great skills &mdash; and feeling a little more confident in their ability to defend themselves. Which is the whole point. The kind of thing you hope you never need, and are glad you practiced.</p>
+    </div>
+    <div class="mt-8 grid grid-cols-2 gap-4">
+      <figure>
+        <img src="/images/events/2026SelfDefense/instruction.jpg" alt="Brandon Tracy demonstrating a technique one-on-one with a participant" class="w-full h-auto rounded-sm" />
+      </figure>
+      <figure>
+        <img src="/images/events/2026SelfDefense/pads.jpg" alt="Two participants working a technique together, laughing as they go" class="w-full h-auto rounded-sm" />
+      </figure>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- What happened in August: Family picnic -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 py-12">
+    <p class="text-xs tracking-[0.3em] uppercase text-optimist-slate">What happened</p>
+    <h2 class="mt-3 text-3xl md:text-4xl font-bold text-optimist-blue">Back around the same table</h2>
+    <figure class="mt-8">
+      <img src="/images/events/2026Picnic/picnic-group.jpg" alt="Optimist Club members and their families gathered for a group photo at the family picnic in Grundahl Park" class="w-full h-auto rounded-sm" />
+    </figure>
+    <div class="mt-8 space-y-5 text-lg leading-relaxed text-optimist-blue">
+      <p>Once a year the work stops and the club just plays. On a warm August evening, the Optimists gathered under the shelter at Grundahl Park &mdash; spouses, kids, the whole crew &mdash; for a potluck and a few easy hours together. Everybody brought a dish. The food was something; the company was better.</p>
+      <p>It was the first time many of us had been in the same place since spring, after a summer of vacations and time away &mdash; and the evening flew. We got so busy catching up that no one thought to take a picture until the very end. So these are the families still there when someone finally rounded us up &mdash; there were more of us over dinner and conversation earlier. Next year, we'll take it sooner, and get a few more of us in it.</p>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- Someone You Should Know — summer recap finale (March + April + May) -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 py-12">
+    <p class="text-xs tracking-[0.3em] uppercase text-optimist-slate">Someone you should know</p>
+    <h2 class="mt-3 text-3xl md:text-4xl font-bold text-optimist-blue">The seniors we met this year</h2>
+
+    <p class="mt-6 text-lg leading-relaxed text-optimist-blue italic">
+      The club doesn't meet in the summer, so we've spent these issues re-introducing the Class of 2026 &mdash; the high school seniors we honored this past school year. This month, the last six: the seniors we met in March, April, and May.
+    </p>
+
+    <div class="mt-12 grid grid-cols-2 gap-6">
+      <figure>
+        <img src="/images/sysk/2026-03/hadac-maddie.jpeg" alt="Maddie Hadac" class="w-full h-auto rounded-sm" />
+        <figcaption class="mt-4 text-base font-semibold text-optimist-blue">Maddie Hadac</figcaption>
+        <p class="mt-2 text-base leading-relaxed text-optimist-blue">Honored this past spring, with her parents Shannon and Jim.</p>
+      </figure>
+      <figure>
+        <img src="/images/sysk/2026-03/mccue-molly.jpeg" alt="Molly McCue" class="w-full h-auto rounded-sm" />
+        <figcaption class="mt-4 text-base font-semibold text-optimist-blue">Molly McCue</figcaption>
+        <p class="mt-2 text-base leading-relaxed text-optimist-blue">Honored this past spring, with her parents Eric and Ann and her brothers Connor, Brady, and Quinn.</p>
+      </figure>
+      <figure>
+        <img src="/images/sysk/2026-04/hastings-kaylen.jpeg" alt="Kaylen Hastings" class="w-full h-auto rounded-sm" />
+        <figcaption class="mt-4 text-base font-semibold text-optimist-blue">Kaylen Hastings</figcaption>
+        <p class="mt-2 text-base leading-relaxed text-optimist-blue">Honored this past spring, with her parents Gary and Mary.</p>
+      </figure>
+      <figure>
+        <img src="/images/sysk/2026-04/kreul-barret.jpeg" alt="Barret Kreul" class="w-full h-auto rounded-sm" />
+        <figcaption class="mt-4 text-base font-semibold text-optimist-blue">Barret Kreul</figcaption>
+        <p class="mt-2 text-base leading-relaxed text-optimist-blue">Honored this past spring, with his parents Darrick and Stacy.</p>
+      </figure>
+      <figure>
+        <img src="/images/sysk/2026-05/droessler-faith.jpg" alt="Faith Droessler" class="w-full h-auto rounded-sm" />
+        <figcaption class="mt-4 text-base font-semibold text-optimist-blue">Faith Droessler</figcaption>
+        <p class="mt-2 text-base leading-relaxed text-optimist-blue">Honored this past spring, with her parents Brian and Tanya.</p>
+      </figure>
+      <figure>
+        <img src="/images/sysk/2026-05/schilling-daniel.jpg" alt="Daniel Schilling" class="w-full h-auto rounded-sm" />
+        <figcaption class="mt-4 text-base font-semibold text-optimist-blue">Daniel Schilling</figcaption>
+        <p class="mt-2 text-base leading-relaxed text-optimist-blue">Honored this past spring, with his family &mdash; Tara Schilling, Tom Henderson, Ben Schilling, and Sue Henderson.</p>
+      </figure>
+    </div>
+    <p class="mt-10 text-base text-optimist-blue text-center">
+      Read their full stories at <a href="/someone-you-should-know/class-of-2026" class="underline hover:text-optimist-gold transition-colors">someone you should know &middot; class of 2026</a>.
+    </p>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- What's coming up -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 py-12">
+    <p class="text-xs tracking-[0.3em] uppercase text-optimist-slate">What's coming up</p>
+    <h2 class="mt-3 text-3xl md:text-4xl font-bold text-optimist-blue">September</h2>
+
+    <div class="mt-10 space-y-12 text-lg leading-relaxed text-optimist-blue">
+      <div>
+        <p class="text-sm tracking-[0.2em] uppercase text-optimist-slate">Monday, September 21</p>
+        <h3 class="mt-2 text-xl md:text-2xl font-semibold text-optimist-blue">The club is back</h3>
+        <p class="mt-3">After a summer off, the Optimists gather again &mdash; third Monday of the month, 6:45 in the evening at the Mount Horeb Public Library. It's the first meeting of the new Optimist year, and the first student we'll honor this school year. If you've ever thought about coming, this is the month for it. Be our guest &mdash; bring a neighbor if you like.</p>
+      </div>
+    </div>
+
+    <p class="mt-10 text-base text-optimist-blue text-center">
+      The full slate at <a href="/events" class="underline hover:text-optimist-gold transition-colors">events</a>.
+    </p>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- Meet an Optimist: Emily -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 py-12">
+    <p class="text-xs tracking-[0.3em] uppercase text-optimist-slate">Meet an optimist</p>
+    <h2 class="mt-3 text-3xl md:text-4xl font-bold text-optimist-blue">Emily</h2>
+
+    <p class="mt-6 text-lg leading-relaxed text-optimist-blue italic">
+      Three questions for one of the friends who keeps the club going.
+    </p>
+
+    <div class="mt-10 space-y-10 text-lg leading-relaxed text-optimist-blue">
+      <div>
+        <p class="font-semibold text-optimist-blue">The Kid's Zone has your fingerprints all over it. What is it about that night that keeps you coming back?</p>
+        <p class="mt-3">The simple answer is that I love kids and creating spaces for them to just be kids!</p>
+        <p class="mt-3">The longer answer is that it allows me to use my gifts in a way that brings me and others joy. That's part of what makes being an Optimist great &mdash; there is a space for each person to use their unique gifts and talents in a way that contributes positively to the group and our larger community.</p>
+        <p class="mt-3">The other part that keeps me coming back is that I love Mount Horeb! The July 3rd event at the Norsk is a beautiful opportunity for our community to come together and the Kid's Zone is my little way of being able to give back to this amazing place my family and I get to call home.</p>
+      </div>
+      <div>
+        <p class="font-semibold text-optimist-blue">What's something simple about being an Optimist that people might not expect?</p>
+        <p class="mt-3">You don't need any background knowledge or experiences to be a fully engaged member. You don't need to be a longtime resident or have experience with children or have been part of any organization to be able to participate in and contribute as an Optimist member. Just show up as yourself!</p>
+      </div>
+      <div>
+        <p class="font-semibold text-optimist-blue">If a friend asked what an Optimist meeting is like, what would you tell them?</p>
+        <p class="mt-3">It's a really laid-back, friendly gathering with lots of laughter and, of course, optimism! We discuss ways to support local organizations that focus on youth, celebrate really great students and how they make a difference, and coordinate ways we can raise money while also making a positive impact on our community. Bonus &mdash; the meetings never run late!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- How to help -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 py-12 text-center">
+    <p class="text-lg leading-relaxed text-optimist-blue">
+      Forward this to a neighbor. Better yet, come see us &mdash; the club is meeting again. Third Monday, Mount Horeb Public Library, 6:45 in the evening. We'd be glad to see you.
+    </p>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- Subscribe -->
+<NewsletterSignup />
+
+<!-- End ornament -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 pt-4 pb-20 text-center">
+    <p class="text-2xl tracking-[0.5em] text-optimist-gold">&middot; &middot; &middot;</p>
+    <p class="mt-6 text-xs tracking-[0.3em] uppercase text-optimist-slate">End of Vol. 1 &middot; No. 5</p>
+  </div>
+</section>
+
+		</main>
+		<Footer />
+	</body>
+</html>
