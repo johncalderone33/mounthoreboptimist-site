@@ -12,7 +12,7 @@ Hold that picture before writing a sentence. The rules below all serve it.
 
 - Sentence fragments are deliberate. ("Friends of youth. Neighbors who believe in our home.")
 - Concrete details over abstractions. ("Third Monday of every month, 6:45 in the evening at the Mount Horeb Public Library.") **But never invent specifics** — days of the week, times, quotes, named events, attendance numbers. Use only details verified from JC, the existing site, or sources I can cite. If a specific would strengthen a sentence but isn't known, leave it out. Vagueness beats fabrication.
-- Em-dashes everywhere — use the literal `&mdash;` in `.astro` source, not the Unicode character.
+- Em-dashes everywhere — use the literal `&mdash;` in `.astro` source, not the Unicode character. **Exception: newsletters use a plain spaced hyphen instead — see [newsletter.md](newsletter.md).**
 - Italics sparingly, with `<em>`, for emphasis or names being honored.
 - Direct address to the reader. "If this sounds like the kind of place you'd like to stand, come say hello."
 - **No corporate marketing tone.** No "amazing," no "world-class," no "passionate," no "stakeholders," no "best-in-class," no buzzwords.

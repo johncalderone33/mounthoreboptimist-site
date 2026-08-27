@@ -15,7 +15,8 @@ Monthly publication, sent on the 1st of the month. Issue covers the **prior mont
 - **Publication name:** *The Mount Horeb Optimist* (title case, four words). Don't use the lowercase "mounthoreboptimist" form — that was the working title before the rename.
 - Issue label format: `Vol. N · No. N · <Month> <Year>`.
 - Target length: 700–900 words, ~3-minute read.
-- Voice: same as rest of site — see [voice.md](voice.md).
+- Voice: same as rest of site — see [voice.md](voice.md), with one exception below.
+- **No em-dashes in newsletters** (JC's rule, Aug 2026). Use a plain spaced hyphen (` - `) instead. This overrides voice.md's em-dash rule for newsletter issues only — the rest of the site keeps em-dashes for now. Applies to the web issue and the MailerLite email both.
 
 ## Guest-content voice preservation (Meet an Optimist)
 
