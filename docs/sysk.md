@@ -13,7 +13,7 @@ SYSK month pages are organized by **school year**, not calendar year, because ea
 3. Swap names, two-paragraph bios, and image paths. Each student gets their own alternating-bg section, ending with the italic `<em>{Name}</em> is Someone You Should Know.` line.
 4. Update [src/pages/someone-you-should-know/index.astro](../src/pages/someone-you-should-know/index.astro) — change "Most recently" heading + names + link.
 5. Update the school-year index page ([src/pages/someone-you-should-know/class-of-&lt;grad-year&gt;/index.astro](../src/pages/someone-you-should-know/class-of-2026/index.astro)) to include the new month.
-6. When a new school year starts (October), create a new `class-of-<grad-year>/` folder and index, and add a link to [src/components/sysk/SyskArchiveFooter.astro](../src/components/sysk/SyskArchiveFooter.astro).
+6. When a new school year starts (first meeting of the fall — September in 2026, October in 2025), create a new `class-of-<grad-year>/` folder and index, and add a link to [src/components/sysk/SyskArchiveFooter.astro](../src/components/sysk/SyskArchiveFooter.astro).
 
 ## Bio voice
 
