@@ -57,6 +57,7 @@ public/
     swis-district-65078.png      SWIS District logo
   favicon.svg / favicon.ico
   robots.txt                     points to sitemap-index.xml
+archive/unused-photos/           photos pulled off the site but kept for reference. Nothing here ships.
 astro.config.mjs                 site: 'https://mounthoreboptimist.com'
 .node-version                    '22' — for fnm auto-switch on cd
 ```
