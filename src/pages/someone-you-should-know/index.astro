@@ -2,7 +2,6 @@
 import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
 import Header from '../../components/Header.astro';
-import SyskRecognitionNote from '../../components/sysk/SyskRecognitionNote.astro';
 import SyskArchiveFooter from '../../components/sysk/SyskArchiveFooter.astro';
 import { SITE_TITLE } from '../../consts';
 ---
@@ -21,31 +20,19 @@ import { SITE_TITLE } from '../../consts';
   <div class="max-w-3xl mx-auto px-6 py-20 text-center">
     <h1 class="text-4xl md:text-5xl font-bold text-optimist-blue">Someone You Should Know</h1>
     <p class="mt-10 text-lg md:text-xl leading-relaxed text-optimist-blue">
-      Every meeting, two Mount Horeb High School students join us and share their amazing stories. These are the students who help build our community. Who volunteer. Who teach and share with our younger kids, pack the food parcels, sing in the choir, stay late after practice. The kind of young person Mount Horeb quietly grows year after year.
+      Every meeting, two Mount Horeb High School seniors join us and tell us their stories. These are the students who help build our community. Who volunteer. Who teach and share with our younger kids, pack the food parcels, sing in the choir, stay late after practice. The kind of young person Mount Horeb quietly grows year after year.
     </p>
     <p class="mt-6 text-lg md:text-xl leading-relaxed text-optimist-blue">
-      We share their story on our Facebook page, in the Mount Horeb Mail, and now here — so you can know them too.
+      Each one is honored for outstanding community service at the club's monthly meeting, with family in the room. They go home with a certificate and $50, and every honoree is eligible for an Optimist Club scholarship at the Senior Awards event in May.
+    </p>
+    <p class="mt-6 text-lg md:text-xl leading-relaxed text-optimist-blue">
+      We share their stories on our Facebook page, in the Mount Horeb Mail, and here, so you can know them too.
     </p>
   </div>
 </section>
 
-<!-- Most recent month -->
-<section class="bg-optimist-beige">
-  <div class="max-w-3xl mx-auto px-6 py-16 text-center">
-    <p class="text-sm tracking-[0.3em] uppercase text-optimist-slate">Most recently</p>
-    <h2 class="mt-4 text-3xl md:text-4xl font-bold text-optimist-blue">May 2026</h2>
-    <p class="mt-6 text-lg md:text-xl text-optimist-blue">Faith Droessler &middot; Daniel Schilling</p>
-    <a href="/someone-you-should-know/class-of-2026/may" class="inline-block mt-10 px-8 py-3 rounded-full bg-optimist-yellow text-optimist-blue font-semibold hover:bg-optimist-gold transition-colors">
-      Meet them
-    </a>
-  </div>
-</section>
-
-<SyskRecognitionNote />
-<SyskArchiveFooter />
-
 <!-- Nominate a student -->
-<section class="bg-white">
+<section class="bg-optimist-beige">
   <div class="max-w-3xl mx-auto px-6 py-20 text-center">
     <p class="text-sm tracking-[0.3em] uppercase text-optimist-slate">Know someone we should know?</p>
     <h2 class="mt-6 text-3xl md:text-4xl font-bold text-optimist-blue">Nominate a senior</h2>
@@ -57,6 +44,20 @@ import { SITE_TITLE } from '../../consts';
     </a>
   </div>
 </section>
+
+<!-- Most recent month -->
+<section class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-16 text-center">
+    <p class="text-sm tracking-[0.3em] uppercase text-optimist-slate">Most recently</p>
+    <h2 class="mt-4 text-3xl md:text-4xl font-bold text-optimist-blue">September 2026</h2>
+    <p class="mt-6 text-lg md:text-xl text-optimist-blue">Maddie Becker &middot; Alyssa Garrity</p>
+    <a href="/someone-you-should-know/class-of-2027/september" class="inline-block mt-10 px-8 py-3 rounded-full bg-optimist-yellow text-optimist-blue font-semibold hover:bg-optimist-gold transition-colors">
+      Meet them
+    </a>
+  </div>
+</section>
+
+<SyskArchiveFooter />
 
 		</main>
 		<Footer />
