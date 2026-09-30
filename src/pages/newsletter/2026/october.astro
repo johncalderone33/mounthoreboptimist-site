@@ -1,0 +1,195 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Footer from '../../../components/Footer.astro';
+import Header from '../../../components/Header.astro';
+import NewsletterSignup from '../../../components/NewsletterSignup.astro';
+import { SITE_TITLE } from '../../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title={`Newsletter · October 2026 · ${SITE_TITLE}`}
+			description="The Mount Horeb Optimist - Volume 1, Number 6, October 2026. The monthly newsletter from the Optimist Club of Mount Horeb, Wisconsin."
+		/>
+	</head>
+	<body>
+		<Header />
+		<main>
+
+<!-- Masthead -->
+<section class="bg-white">
+  <div class="max-w-5xl mx-auto px-6 pt-20 pb-12">
+    <div class="border-y-4 border-double border-optimist-blue py-10 text-center">
+      <p class="text-xs tracking-[0.4em] uppercase text-optimist-slate">Optimist Club of Mount Horeb, Wisconsin</p>
+      <h1 class="mt-6 font-bold text-optimist-blue leading-none font-masthead uppercase tracking-tight whitespace-nowrap text-[clamp(1.25rem,6vw,4rem)]">The Mount Horeb Optimist</h1>
+      <p class="mt-6 text-sm tracking-[0.3em] uppercase text-optimist-slate">Vol. 1 &middot; No. 6 &middot; October 2026</p>
+    </div>
+  </div>
+</section>
+
+<!-- Opening -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 pb-12">
+    <p class="text-lg md:text-xl leading-relaxed text-optimist-blue italic">
+      September put us back in our chairs. Third Monday, the Mount Horeb Public Library, and the first two students of a new school year. October brings a vote, a road rally, and one more friend to meet.
+    </p>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- What happened in September: the first meeting of the new year -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 py-12">
+    <p class="text-xs tracking-[0.3em] uppercase text-optimist-slate">What happened</p>
+    <h2 class="mt-3 text-3xl md:text-4xl font-bold text-optimist-blue">Back at the library</h2>
+    <div class="mt-8 space-y-5 text-lg leading-relaxed text-optimist-blue">
+      <p>September brought the Optimists back for the first meeting of the new club year. The highlight, as always, was our students. It's the 2026-2027 school year, and that means Someone You Should Know is back. Two seniors, Maddie Becker and Alyssa Garrity, came with their families and told us their stories. You can meet them just below.</p>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- Someone You Should Know - September honorees -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 py-12">
+    <p class="text-xs tracking-[0.3em] uppercase text-optimist-slate">Someone you should know</p>
+    <h2 class="mt-3 text-3xl md:text-4xl font-bold text-optimist-blue">Honored at the September meeting</h2>
+
+    <div class="mt-12 grid grid-cols-2 gap-6">
+      <figure>
+        <img src="/images/sysk/2026-09/becker-maddie.jpeg" alt="Maddie Becker" class="w-full h-auto rounded-sm" />
+        <figcaption class="mt-4 text-base font-semibold text-optimist-blue">Maddie Becker</figcaption>
+        <p class="mt-2 text-base leading-relaxed text-optimist-blue">Senior. Student Council president, National Honor Society officer, drum major, swim team captain. Volunteers with Club Interact and with the Optimists at Storybook Theatre, the Silent Auction, and the Kid's Zone.</p>
+      </figure>
+      <figure>
+        <img src="/images/sysk/2026-09/garrity-alyssa.jpeg" alt="Alyssa Garrity" class="w-full h-auto rounded-sm" />
+        <figcaption class="mt-4 text-base font-semibold text-optimist-blue">Alyssa Garrity</figcaption>
+        <p class="mt-2 text-base leading-relaxed text-optimist-blue">Senior. Letters of Love, Club Interact, Spanish Club. Dancing at Forte Studios since age three, now teaching the younger kids; serves through Blackhawk Church and Neighbors Helping Neighbors.</p>
+      </figure>
+    </div>
+    <p class="mt-6 text-base text-optimist-blue text-center">
+      Read their full stories at <a href="/someone-you-should-know/class-of-2027/september" class="underline hover:text-optimist-gold transition-colors">someone you should know &middot; September 2026</a>.
+    </p>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- What's coming up -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 py-12">
+    <p class="text-xs tracking-[0.3em] uppercase text-optimist-slate">What's coming up</p>
+    <h2 class="mt-3 text-3xl md:text-4xl font-bold text-optimist-blue">October, and a look ahead</h2>
+
+    <div class="mt-10 space-y-12 text-lg leading-relaxed text-optimist-blue">
+      <div>
+        <p class="text-sm tracking-[0.2em] uppercase text-optimist-slate">Monday, October 19</p>
+        <h3 class="mt-2 text-xl md:text-2xl font-semibold text-optimist-blue">The October meeting - and an election</h3>
+        <p class="mt-3">Third Monday, 6:45 in the evening at the Mount Horeb Public Library. Two more students to honor, and a bit of club business worth mentioning: this month we elect our officers for the year ahead. Inside baseball, sure. But it's how a club like this keeps going - neighbors raising a hand and saying, <em>I'll take a turn.</em> Guests are welcome, as always.</p>
+      </div>
+
+      <div>
+        <p class="text-sm tracking-[0.2em] uppercase text-optimist-slate">Saturday, October 24</p>
+        <h3 class="mt-2 text-xl md:text-2xl font-semibold text-optimist-blue">Road Rally</h3>
+        <p class="mt-3">Four to a car and a series of clues. Every team visits the same stops, each in a different order, and the final clue leads everyone to one place - a party. We start at 5 in the evening. It's a night out for Optimists, spouses, and friends. And if you've ever wondered what this club is like, this is an easy way to find out. Come ride along. Write to <a href="mailto:hello@mounthoreboptimist.com" class="underline hover:text-optimist-gold transition-colors">hello@mounthoreboptimist.com</a> and we'll find you a seat in a car.</p>
+      </div>
+
+      <div>
+        <p class="text-sm tracking-[0.2em] uppercase text-optimist-slate">Looking ahead - Wednesday, November 4</p>
+        <h3 class="mt-2 text-xl md:text-2xl font-semibold text-optimist-blue">The Optimists at Good Morning, Mount Horeb</h3>
+        <p class="mt-3">On the first Wednesday of every month, the Mount Horeb Area Chamber of Commerce and the Village of Mount Horeb put on Good Morning, Mount Horeb - an hour for neighbors and local businesses to catch up on what's happening around town. Each month a local nonprofit gets the floor. In November, it's us. We'll tell the club's story - what we do, who we do it for, and how to be part of it. 8 to 9 in the morning at Martinson Hall. Free, and open to everyone. Come hear it, and say hello after.</p>
+      </div>
+
+      <div>
+        <p class="text-sm tracking-[0.2em] uppercase text-optimist-slate">Looking ahead - Super Bowl Sunday</p>
+        <h3 class="mt-2 text-xl md:text-2xl font-semibold text-optimist-blue">The Silent Auction</h3>
+        <p class="mt-3">On the morning of Super Bowl Sunday, our friends at the Mount Horeb Rotary Club serve their Super Brunch, pancakes and all, and the Optimists line the tables beside it with hundreds of things to bid on. It's our biggest fundraiser of the year, and what it raises goes to the youth of Mount Horeb and Blue Mounds. Come hungry. Leave with something you didn't know you needed.</p>
+      </div>
+
+      <div>
+        <p class="text-sm tracking-[0.2em] uppercase text-optimist-slate">Looking ahead - February</p>
+        <h3 class="mt-2 text-xl md:text-2xl font-semibold text-optimist-blue">Twice Upon a Time</h3>
+        <p class="mt-3">What if Captain Hook gave up the high seas and took up crocheting? What if Jack and Jill were too scared to go up the hill, and Sleeping Beauty couldn't sleep a wink? Somebody has run off with The Storybook, and every fairytale you know is coming out wrong.</p>
+        <p class="mt-3">Every winter the Optimists bring Storybook Theatre to town, and Mount Horeb kids get one week to become the cast. This February's show is <em>Twice Upon a Time</em>, and Rip Van Winkle and the Seven Dwarfs are on the case. Dates and details to come. For now, just know that somewhere a pirate is learning to crochet.</p>
+      </div>
+    </div>
+
+    <p class="mt-10 text-base text-optimist-blue text-center">
+      The full slate at <a href="/events" class="underline hover:text-optimist-gold transition-colors">events</a>.
+    </p>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- Meet an Optimist: Theresa -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 py-12">
+    <p class="text-xs tracking-[0.3em] uppercase text-optimist-slate">Meet an optimist</p>
+    <h2 class="mt-3 text-3xl md:text-4xl font-bold text-optimist-blue">Theresa</h2>
+
+    <p class="mt-6 text-lg leading-relaxed text-optimist-blue italic">
+      Three questions for one of the friends who keeps the club going.
+    </p>
+
+    <div class="mt-10 space-y-10 text-lg leading-relaxed text-optimist-blue">
+      <div>
+        <p class="font-semibold text-optimist-blue">What got you to your first meeting?</p>
+        <p class="mt-3">A personal invitation! Cynthia Jefko was our son's teacher, and we knew firsthand she is a very caring person of great integrity. She encouraged Joe and me to join and we met other similar folks as members.</p>
+      </div>
+      <div>
+        <p class="font-semibold text-optimist-blue">What's a moment from a club event this past year that still makes you smile?</p>
+        <p class="mt-3">At the 4th of July Norsk event, I ran into former Mount Horeb High School principal, Chuck Misky. He had enough curiosity about the Kid's Zone activities that he jumped in line alongside the kids! He opted for a fun patriotic hand tattoo from the teenage face painting volunteers. Those teens spent hours creating smiles for kids of all ages and even for those like Chuck who are young at heart. That joy is contagious and represents the importance of intergenerational activities in our community!</p>
+      </div>
+      <div>
+        <p class="font-semibold text-optimist-blue">What do you wish more people in Mount Horeb knew about the club?</p>
+        <p class="mt-3">We mix business with pleasure, the meetings are short, productive, and efficient, and the people and projects are so very uplifting to your spirit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- How to help -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 py-12 text-center">
+    <p class="text-lg leading-relaxed text-optimist-blue">
+      Forward this to a neighbor. Better yet, come see for yourself - Monday, October 19, 6:45 in the evening at the Mount Horeb Public Library. Guests are always welcome.
+    </p>
+  </div>
+</section>
+
+<div class="max-w-2xl mx-auto px-6 py-2 text-center">
+  <span class="text-optimist-gold text-2xl tracking-[0.5em]">&middot; &middot; &middot;</span>
+</div>
+
+<!-- Subscribe -->
+<NewsletterSignup />
+
+<!-- End ornament -->
+<section class="bg-white">
+  <div class="max-w-2xl mx-auto px-6 pt-4 pb-20 text-center">
+    <p class="text-2xl tracking-[0.5em] text-optimist-gold">&middot; &middot; &middot;</p>
+    <p class="mt-6 text-xs tracking-[0.3em] uppercase text-optimist-slate">End of Vol. 1 &middot; No. 6</p>
+  </div>
+</section>
+
+		</main>
+		<Footer />
+	</body>
+</html>
