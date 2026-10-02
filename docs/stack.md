@@ -9,7 +9,7 @@ Read this when running commands, debugging the build, navigating the codebase, o
 - **MDX**, **@astrojs/sitemap**, **@astrojs/rss**, **sharp** integrations
 - **Strict TypeScript** (`astro/tsconfigs/strict` + `strictNullChecks`)
 - **Atkinson font**, locally hosted woff via the `astro:assets` `<Font>` component
-- **Node ≥ 22.12**, managed via **fnm** (`.node-version` pins to `22`). If `npm` isn't on PATH, run `fnm env --use-on-cd --shell powershell | Out-String | Invoke-Expression` first, or `fnm use` in the project dir.
+- **Node ≥ 22.12**, managed via **fnm** (`.node-version` pins to `24`). If `npm` isn't on PATH, run `fnm env --use-on-cd --shell powershell | Out-String | Invoke-Expression` first, or `fnm use` in the project dir.
 
 Scripts:
 - `npm run dev` — Astro dev server
@@ -59,7 +59,7 @@ public/
   robots.txt                     points to sitemap-index.xml
 archive/unused-photos/           photos pulled off the site but kept for reference. Nothing here ships.
 astro.config.mjs                 site: 'https://mounthoreboptimist.com'
-.node-version                    '22' — for fnm auto-switch on cd
+.node-version                    '24' — for fnm auto-switch on cd
 ```
 
 ## Deploy flow
